@@ -6,7 +6,7 @@ import {
 } from "../../../utils/angleCalc.js";
 
 const white = "rgb(255, 255, 255)";
-const green = "rgb(36, 173, 48)";
+const green = "#EA6091";
 const brightGreen = "rgb(25, 207, 41)"
 const black = "rgb(40, 44, 52)";
 const grey = "rgb(135, 135, 135)";

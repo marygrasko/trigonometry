@@ -4,7 +4,7 @@
   width: 36px;
   height: 30px;
   left: 36px;
-  top: 36px;
+  top: 190px;
 }
 
 .values-menu .bm-burger-button {
@@ -12,7 +12,7 @@
   width: 36px;
   height: 30px;
   right: 36px;
-  top: 36px;
+  top: 190px;
 }
 
 /* Position and sizing of clickable cross button */
@@ -47,7 +47,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: rgb(64, 70, 84);
+  background: #A8C4E5;
   font: 18px Consolas;
   padding: 1em 1em 0;
 }
@@ -163,6 +163,6 @@ button.wide-button {
 }
 
 button.wide-button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #2B4381;
   color: rgb(40, 44, 52);
 }

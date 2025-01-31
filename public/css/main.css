@@ -16,7 +16,7 @@
 }
 @media (min-width: 770px) {
   .container .container_elements .container_elements_menu {
-    background-image: url("../img/header.webp");
+    background-image: url("../header.webp");
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
@@ -25,7 +25,7 @@
 }
 @media (max-width: 770px) {
   .container .container_elements .container_elements_menu {
-    background-image: url("../img/header.webp");
+    background-image: url("../header.webp");
     background-repeat: repeat-x;
     background-position: center;
     background-size: cover;
@@ -69,10 +69,8 @@
             justify-content: center;
     margin: 10px;
     background-color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+      border-radius: 10px;
+      padding: 3px 10px;
   }
   .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span {
     font-family: "Candara";
@@ -90,10 +88,8 @@
     margin: 6px;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 8px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    width: 75%;
+      padding: 3px 8px;
+      width: 75%;
   }
   .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span {
     display: -webkit-box;

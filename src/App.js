@@ -3,13 +3,12 @@ import Canvas from './components/canvas/Canvas.js';
 import SettingsMenu from './components/settings_menu/SettingsMenu.js';
 import ValuesMenu from './components/values_menu/ValuesMenu.js';
 import './App.css';
-
 import {
   degToRad,
   radToDeg
 } from "./utils/angleCalc.js";
 
-function App() {
+export default function App() {
   const [degreeAngle, setDegreeAngle] = useState(null);
   const [radianAngle, setRadianAngle] = useState(null);
   const [trigValues, setTrigValues] = useState({});
@@ -34,7 +33,7 @@ function App() {
   const [updateCount, setUpdateCount] = useState(0);
 
   useEffect(() => {
-    document.title = "Trig Assist"
+    document.title = "Trigonometry"
   }, []);
 
   const updateTrigValues = (radians) => {
@@ -46,7 +45,7 @@ function App() {
       "sec": (1/Math.cos(radians)).toFixed(5),
       "csc": (1/Math.sin(radians)).toFixed(5),
     });
-  }
+  };
 
   const handleDegreeAngleChange = (event) => {
     const input = event.target.value;
@@ -59,7 +58,7 @@ function App() {
       console.log("ANGLE OUT OF BOUNDS");
     }
     setUpdateCount(updateCount + 1);
-  }
+  };
 
   const handleRadianAngleChange = (event) => {
     const input = event.target.value;
@@ -67,18 +66,18 @@ function App() {
     setDegreeAngle(radToDeg(input).toFixed(0));
     updateTrigValues(input);
     setUpdateCount(updateCount + 1);
-  }
+  };
 
   const handleGraphRadianChange = (radians) => {
     setRadianAngle(radians);
     setDegreeAngle(radToDeg(radians).toFixed(0));
     updateTrigValues(radians);
-  }
+  };
 
   const handleAngleSelectionChange = (event) => {
     setAngleSelect(event.target.checked);
     setUpdateCount(updateCount + 1);
-  }
+  };
 
   const handleAngleUnitChange = (event) => {
     switch(event.target.value){
@@ -93,7 +92,7 @@ function App() {
         break;
     }
     setUpdateCount(updateCount + 1);
-  }
+  };
 
   const handleTrigSelectionChange = (event) => {
     const newTrigVisible = trigVisible;
@@ -119,7 +118,7 @@ function App() {
     }
     setTrigVisible(newTrigVisible);
     setUpdateCount(updateCount + 1);
-  }
+  };
 
   const handleCircleDetailChange = (event) => {
     const newCircleDetails = circleDetails;
@@ -145,7 +144,7 @@ function App() {
     }
     setCircleDetails(newCircleDetails);
     setUpdateCount(updateCount + 1);
-  }
+  };
 
   return (
     <div className="App">
@@ -181,4 +180,3 @@ function App() {
   );
 }
 
-export default App;

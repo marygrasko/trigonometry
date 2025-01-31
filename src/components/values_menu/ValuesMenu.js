@@ -6,11 +6,13 @@ function ValuesMenu(props) {
   return (
     <Menu right noOverlay disableAutoFocus isOpen width={375}>
       <label className="centered underlined" style={{padding: "1em 0"}}>
-        NB: Trigonometric values are rendered on the circle as their absolute value and rounded to two decimal places, consult the values below for better accuracy.
+          Тригонометрические значения отображаются на окружности как их абсолютные значения и округляются до двух
+          знаков после запятой,
+          для большей точности обратитесь к приведенным ниже значениям.
       </label>
 
       <label className="centered large-print">
-          Trigonometric Function Values
+          Значения тригонометрических функций
       </label>
       <label className="centered">
           cos(θ) = {props.trigValues.cos}
