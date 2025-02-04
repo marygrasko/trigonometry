@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/trigonometry/static/css/main.d1837d11.css",
+    "main.js": "/trigonometry/static/js/main.a6212c54.js",
+    "static/js/453.48a13149.chunk.js": "/trigonometry/static/js/453.48a13149.chunk.js",
+    "index.html": "/trigonometry/index.html",
+    "main.d1837d11.css.map": "/trigonometry/static/css/main.d1837d11.css.map",
+    "main.a6212c54.js.map": "/trigonometry/static/js/main.a6212c54.js.map",
+    "453.48a13149.chunk.js.map": "/trigonometry/static/js/453.48a13149.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1837d11.css",
+    "static/js/main.a6212c54.js"
+  ]
+}

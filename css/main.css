@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+}
+.container .container_elements .container_elements_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+}
+@media (min-width: 770px) {
+  .container .container_elements .container_elements_menu {
+    background-image: url("../header.webp");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    border-radius: 19px;
+  }
+}
+@media (max-width: 770px) {
+  .container .container_elements .container_elements_menu {
+    background-image: url("../header.webp");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+    border-radius: 19px;
+  }
+}
+.container .container_elements .container_elements_menu .container_elements_menu_img {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 770px) {
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 770px) {
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px;
+    background-color: #ffffff;
+      border-radius: 10px;
+      padding: 3px 10px;
+  }
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span {
+    font-family: "Candara";
+  }
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span a {
+    color: #103f6d;
+    text-decoration: none !important;
+  }
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span a:hover {
+    color: #ffffff;
+  }
+}
+@media (max-width: 770px) {
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span {
+    margin: 6px;
+    background-color: #ffffff;
+    border-radius: 10px;
+      padding: 3px 8px;
+      width: 75%;
+  }
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Candara";
+  }
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span a {
+    color: #103f6d;
+    text-decoration: none !important;
+  }
+  .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span a:hover {
+    color: #ffffff;
+  }
+}
+.container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span:hover {
+  background-color: #103f6d;
+}/*# sourceMappingURL=main.css.map */
