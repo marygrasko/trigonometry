@@ -101,7 +101,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: "Candara";
+      font-family: "Candara";
   }
   .container .container_elements .container_elements_menu .container_elements_menu_nuv .container_elements_menu_nuv_list .container_elements_menu_nuv_list_span span a {
     color: #103f6d;

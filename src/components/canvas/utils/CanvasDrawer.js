@@ -7,7 +7,7 @@ import {
 
 const white = "rgb(255, 255, 255)";
 const green = "#EA6091";
-const brightGreen = "rgb(25, 207, 41)"
+
 const black = "rgb(40, 44, 52)";
 const grey = "rgb(135, 135, 135)";
 
@@ -135,7 +135,7 @@ export default class CanvasDrawer {
     this.ctx.stroke();
 
     this.ctx.font = "20px Consolas";
-
+// eslint-disable-next-line
     // Write angle value
     if(this.angleUnit != "none"){
       this.ctx.fillStyle = white;

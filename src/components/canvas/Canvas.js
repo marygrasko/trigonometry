@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line
 import React, { useEffect, useRef } from "react";
 import CanvasDrawer from "./utils/CanvasDrawer.js"
 import "./Canvas.css";
@@ -50,7 +52,7 @@ function Canvas(props) {
 
   return (
     <canvas ref={canvas} width={width} height={height} className="canvas">
-      <p>Your browser doesn"t support canvas.</p>
+      <p>Your browser doesnt support canvas.</p>
     </canvas>
   );
 }

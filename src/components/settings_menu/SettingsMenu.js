@@ -1,4 +1,6 @@
-import React, { useState, useRef } from "react";
+/* eslint-disable react/prop-types */
+
+import React from "react";
 import { slide as Menu } from 'react-burger-menu';
 import "../Menu.css";
 
