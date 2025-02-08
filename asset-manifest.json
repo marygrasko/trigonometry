@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.34435fe2.css",
-    "main.js": "/static/js/main.c5b08cde.js",
-    "static/js/453.48a13149.chunk.js": "/static/js/453.48a13149.chunk.js",
-    "index.html": "/index.html",
-    "main.34435fe2.css.map": "/static/css/main.34435fe2.css.map",
-    "main.c5b08cde.js.map": "/static/js/main.c5b08cde.js.map",
-    "453.48a13149.chunk.js.map": "//static/js/453.48a13149.chunk.js.map"
+    "main.css": "/trigonometry/static/css/main.34435fe2.css",
+    "main.js": "/trigonometry/static/js/main.c5b08cde.js",
+    "static/js/453.48a13149.chunk.js": "/trigonometry/static/js/453.48a13149.chunk.js",
+    "index.html": "/trigonometry/index.html",
+    "main.34435fe2.css.map": "/trigonometry/static/css/main.34435fe2.css.map",
+    "main.c5b08cde.js.map": "/trigonometry/static/js/main.c5b08cde.js.map",
+    "453.48a13149.chunk.js.map": "/trigonometry/static/js/453.48a13149.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34435fe2.css",
