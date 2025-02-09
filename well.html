@@ -2,11 +2,13 @@
 <html >
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Тригонометрия</title>
   <link rel="icon" href="ico.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/well.css">
 </head>
 <body>
 <div class="container">
@@ -26,6 +28,114 @@
   </div>
 
 </div>
+<main>
+  <div class="accordeon__wrapper">
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции острого угла</a>
+      </div>
+      <div class="accordeon__body"><p>
+<span>В данной статье мы познакомимся с разделом математики, история которого уходит
+  в глубокую древность: времена Вавилона, Древнего Китая, Древнего Египта, Древней Греции.
+   И название этого раздела — тригонометрия (с греч., «тригонон» — треугольник, «меро» — измеряю).
+    Тригонометрия позволяет, в частности, изучать отношения между сторонами и углами в любом
+     треугольнике. И именно такое её применение можно найти в известном папирусе Ахмеса (или Ринда;
+      около  лет до н.э.), где в одной из задач предлагается вычислить наклон пирамиды,
+       зная её высоту и длину стороны основания.
+ А, например, в Древней Греции тригонометрия была тесно связана с астрономией.
+  Поэтому и развитие тригонометрии скорее шло в направлении так называемой «сферической» математики.
+   Но при этом всё же можно найти важные теоремы и для плоского треугольника, открытые
+   древнегреческими учёными. Например, в «Началах» Евклида (около 3 в. до н.э.) есть аналог теоремы,
+    которую современный старшеклассник знает под названием «теорема косинусов» и которая позволяет
+     связать все стороны треугольника с каким-либо его углом.
+ Таким образом, мы видим, что отношения в треугольнике интересовали людей издавна.
+  Давайте и мы познакомимся со столь древним разделом математики. И начнём мы наше исследование с изучения отношений между сторонами и углами в прямоугольном треугольнике.
+         </span>
+        <span>
+          Рассмотрим прямоугольный треугольник АВС с прямым углом А:
+        </span>
+        <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63133/7c6060dbdf087d34.png" style="height:40% ;width:40%">
+        <span>
+          Определение.
+Косинусом угла прямоугольного треугольника называется отношение длины прилежащего к этому углу катета к длине гипотенузы.
+        </span>
+        <span>$$cos B=\frac{AB}{CB},cosC=\frac{AC}{CB}$$</span>
+      </p></div>
+    </div>
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции произвольного угла</a>
+      </div>
+      <div class="accordeon__body"><p>
+        -----</p>
+      </div>
+    </div>
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Обратные тригонометрические функции</a>
+      </div>
+      <div class="accordeon__body" ><p>
+        ----</p>
+      </div>
+    </div>
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Преобразования тригонометрических выражений</a>
+      </div>
+      <div class="accordeon__body"><p>
+        -----
+      </p>
+      </div>
+    </div>
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Свойства тригонометрических функций</a>
+      </div>
+      <div class="accordeon__body"><p>
+        ----
+      </p>
+      </div>
+    </div>
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие уравнения</a>
+      </div>
+      <div class="accordeon__body"><p>
+        -----
+      </p>
+      </div>
+    </div>
+    <div class="accordeon__section">
+      <div class="accordeon__header">
+        <a href="#" class="accordeon__link" onclick="return false">Тригонометрические неравенства</a>
+      </div>
+      <div class="accordeon__body"><p>
+        ---
+      </p>
+      </div>
+    </div>
+  </div>
+</main>
 </body>
+<script>
+  document.querySelectorAll('.accordeon__section').forEach((accSection) => {
+    const accHeader = accSection.querySelector('.accordeon__header');
+    const accBody = accSection.querySelector('.accordeon__body');
+    const accContent = accSection.querySelector('.accordeon__body > *');
+
+    accHeader.addEventListener('click', () => {
+      accSection.classList.toggle("opened");
+
+      if ( accSection.classList.contains("opened") ) {
+        accBody.style.maxHeight = `${accContent.clientHeight}px`;
+      } else {
+        accBody.style.maxHeight = "0px";
+      }
+    })
+  });
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </html>

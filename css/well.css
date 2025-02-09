@@ -1,0 +1,36 @@
+* {box-sizing: border-box}
+.accordeon__wrapper {
+  font-family: sans-serif;
+}
+.accordeon__section {
+  margin-top:30px;
+  border: 1px solid #6698FE;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.accordeon__header {
+  font-size: 20px;
+  justify-content: center;
+  background-color: #E0E9F4;
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.accordeon__link {
+  text-align: center;
+  color: #103F6D;
+  text-decoration: none;
+}
+.accordeon__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.opened .accordeon__body {
+/*   max-height: *.clientHeight; */
+}
+.accordeon__body * {
+  padding: 20px;
+  margin: 0;
+  display: block;
+}
