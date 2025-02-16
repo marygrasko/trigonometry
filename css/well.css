@@ -9,8 +9,6 @@
   margin-bottom: 10px;
 }
 .accordeon__header {
-  font-size: 20px;
-  justify-content: center;
   background-color: #E0E9F4;
   padding: 20px;
   cursor: pointer;
@@ -27,10 +25,25 @@
   transition: all 0.5s;
 }
 .opened .accordeon__body {
-/*   max-height: *.clientHeight; */
+  /*   max-height: *.clientHeight; */
 }
-.accordeon__body * {
+.accordeon__body *:not(:child){
   padding: 20px;
   margin: 0;
   display: block;
+}
+.accordeon__body_p {
+  display: flex;
+  flex-direction:column;
+  padding: 20px;
+  color:#2B4381;
+}
+.accordeon__body_p span{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.accordeon__body_p img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

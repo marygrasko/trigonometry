@@ -9,6 +9,16 @@
   <link rel="icon" href="ico.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/well.css">
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$'], ['<span>\</span>(','<span>\</span>)']]
+        }
+    });
+</script>
 </head>
 <body>
 <div class="container">
@@ -29,12 +39,12 @@
 
 </div>
 <main>
-  <div class="accordeon__wrapper">
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции острого угла</a>
-      </div>
-      <div class="accordeon__body"><p>
+    <div class="accordeon__wrapper">
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции острого угла</a>
+            </div>
+            <div class="accordeon__body"><p class="accordeon__body_p">
 <span>В данной статье мы познакомимся с разделом математики, история которого уходит
   в глубокую древность: времена Вавилона, Древнего Китая, Древнего Египта, Древней Греции.
    И название этого раздела — тригонометрия (с греч., «тригонон» — треугольник, «меро» — измеряю).
@@ -51,70 +61,134 @@
  Таким образом, мы видим, что отношения в треугольнике интересовали людей издавна.
   Давайте и мы познакомимся со столь древним разделом математики. И начнём мы наше исследование с изучения отношений между сторонами и углами в прямоугольном треугольнике.
          </span>
-        <span>
+                <span>
           Рассмотрим прямоугольный треугольник АВС с прямым углом А:
         </span>
-        <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63133/7c6060dbdf087d34.png" style="height:40% ;width:40%">
-        <span>
-          Определение.
-Косинусом угла прямоугольного треугольника называется отношение длины прилежащего к этому углу катета к длине гипотенузы.
-        </span>
-        <span>$$cos B=\frac{AB}{CB},cosC=\frac{AC}{CB}$$</span>
-      </p></div>
+                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63133/7c6060dbdf087d34.png" style="height:40% ;width:40%">
+                <b>Определение</b>
+
+                <span>Косинусом угла прямоугольного треугольника называется отношение длины прилежащего к этому углу катета к длине гипотенузы.
+</span>
+                <span >$$cosB=\frac{AB}{CB},cosC=\frac{AC}{CB}$$</span>
+                <b>Определение</b>
+                <span> Синусом угла прямоугольного треугольника называется отношение длины противолежащего этому углу катета к длине гипотенузы.</span>
+                <span>$$sinB=\frac{AC}{CB},sinC=\frac{AB}{CB}$$</span>
+                <b>Определение</b>
+                <span> Тангенсом угла прямоугольного треугольника называется отношение противолежащего этому углу катета к прилежащему.</span>
+                <span>$$tgB=\frac{AC}{AB},tgC=\frac{AB}{AC}$$</span>
+                <b>Определение</b>
+                <span>Котангенсом угла прямоугольного треугольника называется отношение прилежащего к этому углу катета к противолежащему.</span>
+                <span>$$ctgB=\frac{AB}{AC},ctgC=\frac{AC}{AB}$$</span>
+                <b>Теорема (о корректности определений)</b>
+                <span>Синус, косинус, тангенс и котангенс острого угла зависят только от градусной меры угла и не зависят от расположения и размеров прямоугольного треугольника.</span>
+                <b> Задача</b>
+                <span>По данным чертежа определите: $$sinC,cosC,tgC,ctgC$$.</span>
+                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63137/98cf920a212461a3.png" style="height:40% ;width:40%">
+                <b>Решение</b>
+                <span>Заметим, что АВ=1,ВС=5. Тогда, по теореме Пифагора, $$AC^{2}=BC^{2}+AB^{2}$$,$$AC^{2}=1^{2}+5^{2}=26,AC=\sqrt{26}$$</span>
+                <span>По определениям синуса,косинуса,тангенса и котангенса угла получаем,что $$sinC=\frac{AB}{AC}=\frac{1}{\sqrt{26}}=\frac{\sqrt{26}}{26};$$
+    $$cosC=\frac{BC}{AC}=\frac{5}{\sqrt{26}}=\frac{5\sqrt{26}}{26};$$
+    $$tgC=\frac{AB}{BC}=\frac{1}{5};$$
+    $$tgC=\frac{BC}{AB}=\frac{5}{1}=5;$$
+  </span>
+                <b> Задача</b>
+                <span>Точка М - точка пересечения медиан треугольника АВС. Найдите тангенс угла ВКС, если ВМ=\(\sqrt{2}\)</span>
+                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63141/3d7bd49d56e5b9b5.png" style="height:40% ;width:40%">
+                <b>Решение</b>
+                <span>1) По свойству медианы треугольника, \(\frac{BM}{MK}=\frac{2}{1}\).Значит, \(MK=\frac{1}{2} BM=\frac{\sqrt{2}}{2}.\)</span>
+                <span>2) Рассмотрим \(\bigtriangleup MKC(\angle M=90^{\circ }).tg MKC=\frac{MC}{MK}=MC:\frac{\sqrt{2}}{2}=\sqrt{2}MC,MC=\frac{\sqrt{2}tgMKC}{2}.\) </span>
+                <span>3) Рассмотрим \(\bigtriangleup BMC(\angle M=90^{\circ }).\) По сумме угов треугольника,\(\angle BCM=90^{\circ }-\angle MBC)\).
+  Но из треугольника BCK\(\angle C=90^{\circ }):\angle KBC=90^{\circ }-\angle BKC.\)
+  Значит,\(\angle BCM=90^{\circ }-(90^{\circ }-\angle BKC)=\angle BKC\)
+  </span>
+                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63142/3c5d573d4e3d7439.png" style="height:40% ;width:40%">
+                <span>Далее,\(tgBCM=\frac{BM}{CM}.\)Следовательно, \(tgBKC=\frac{\sqrt{2}}{CM}.\).А учитывая пункт 2),\(tgBKC=\sqrt{2}:\frac{\sqrt{2}tgMKC}{2}=\frac{2}{tgMKC}.\)</span>
+                <span>Значит,\(tgBKC=\frac{2}{tgBKC},tg^{2}BKC = 2,tgBKC=\sqrt{2}\)</span>
+
+            </p>
+            </div>
+        </div>
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции произвольного угла</a>
+            </div>
+            <div class="accordeon__body"><p class="accordeon__body_p">
+              <span>
+                Рассмотрим окружность радиуса   R с центром в начале прямоугольной системой координат Oxy.
+              </span>
+                <img src="https://resolventa.ru/sprris/trig/tfarb/tf6.png" style="height:15% ;width:15%">
+                <span>Положительным считается угол NOM, сторона OM которого получена из положительной полуоси Ox в результате поворота, осуществляемого в направлении движения против часовой стрелки (рис.1).</span>
+                <img src="https://resolventa.ru/sprris/trig/tfarb/tf7.png" style="height:15% ;width:15%">
+                <span>Отрицательным считается угол NOM, сторона OM которого получена из положительной полуоси Ox в результате поворота, осуществляемого в направлении, совпадающем с направлением движения часовой стрелки (рис. 2).
+
+                Если для координат точки   M0 , лежащей на окружности радиуса R с центром в начале координат O (рис. 3),</span>
+                <img src="https://resolventa.ru/sprris/trig/tfarb/tf8.png" style="height:15% ;width:15%">
+                <span>ввести обозначение \(M_{0}=(x_{0};y_{0}),\)то, в силу теоремы Пифагора, будет справедливо равенство:\(x^{2}_{0}+y^{2}_{0}=R^{2}_{0}\).</span>
+                <span>Можно сформулировать следующее общее определение тригонометрических функций произвольного угла.</span>
+                <span>Cинусом, косинусом, тангенсом и котангенсом произвольного угла α называют числа, определяемые по формулам:
+$$sin\alpha=\frac{y_{0}}{R},cos\alpha=\frac{x_{0}}{R},tg\alpha=\frac{y_{0}}{x_{0}},ctg\alpha=\frac{x_{0}}{y_{0}}$$
+
+            </span>
+                <b>Замечание 1.</b>
+                <span>Отметим следующее важное свойство тригонометрических функций синуса и косинуса произвольного угла:
+              $$-1\le sin\alpha\le 1,-1\le cos\alpha\le 1.$$
+            </span>
+                <b>Замечание 2.</b>
+                <span>Определение тригонометрических функций произвольного угла является естественным обобщением определения тригонометрических функций острого угла, данного в разделе справочника "Тригонометрические функции острого угла".</span>
+                <span>Рассмотрим окружность радиуса 1 с центром в начале координат. Если для координат точки   M1 (рис. 4), лежащей на этой окружности,</span>
+                <img src="https://resolventa.ru/sprris/trig/tfarb/tf9.png" style="height:15% ;width:15%">
+
+
+            </p>
+            </div>
+        </div>
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Обратные тригонометрические функции</a>
+            </div>
+            <div class="accordeon__body" ><p>
+                ----</p>
+            </div>
+        </div>
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Преобразования тригонометрических выражений</a>
+            </div>
+            <div class="accordeon__body"><p>
+                -----
+            </p>
+            </div>
+        </div>
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Свойства тригонометрических функций</a>
+            </div>
+            <div class="accordeon__body"><p>
+                ----
+            </p>
+            </div>
+        </div>
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие уравнения</a>
+            </div>
+            <div class="accordeon__body"><p>
+                -----
+            </p>
+            </div>
+        </div>
+        <div class="accordeon__section">
+            <div class="accordeon__header">
+                <a href="#" class="accordeon__link" onclick="return false">Тригонометрические неравенства</a>
+            </div>
+            <div class="accordeon__body"><p>
+                ---
+            </p>
+            </div>
+        </div>
     </div>
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции произвольного угла</a>
-      </div>
-      <div class="accordeon__body"><p>
-        -----</p>
-      </div>
     </div>
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Обратные тригонометрические функции</a>
-      </div>
-      <div class="accordeon__body" ><p>
-        ----</p>
-      </div>
     </div>
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Преобразования тригонометрических выражений</a>
-      </div>
-      <div class="accordeon__body"><p>
-        -----
-      </p>
-      </div>
-    </div>
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Свойства тригонометрических функций</a>
-      </div>
-      <div class="accordeon__body"><p>
-        ----
-      </p>
-      </div>
-    </div>
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие уравнения</a>
-      </div>
-      <div class="accordeon__body"><p>
-        -----
-      </p>
-      </div>
-    </div>
-    <div class="accordeon__section">
-      <div class="accordeon__header">
-        <a href="#" class="accordeon__link" onclick="return false">Тригонометрические неравенства</a>
-      </div>
-      <div class="accordeon__body"><p>
-        ---
-      </p>
-      </div>
-    </div>
-  </div>
 </main>
 </body>
 <script>
@@ -134,8 +208,5 @@
     })
   });
 </script>
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </html>
