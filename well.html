@@ -39,12 +39,13 @@
 
 </div>
 <main>
-    <div class="accordeon__wrapper">
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции острого угла</a>
-            </div>
-            <div class="accordeon__body"><p class="accordeon__body_p">
+    <main>
+        <div class="accordeon__wrapper">
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции острого угла</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
 <span>В данной статье мы познакомимся с разделом математики, история которого уходит
   в глубокую древность: времена Вавилона, Древнего Китая, Древнего Египта, Древней Греции.
    И название этого раздела — тригонометрия (с греч., «тригонон» — треугольник, «меро» — измеряю).
@@ -61,135 +62,875 @@
  Таким образом, мы видим, что отношения в треугольнике интересовали людей издавна.
   Давайте и мы познакомимся со столь древним разделом математики. И начнём мы наше исследование с изучения отношений между сторонами и углами в прямоугольном треугольнике.
          </span>
-                <span>
+                    <span>
           Рассмотрим прямоугольный треугольник АВС с прямым углом А:
         </span>
-                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63133/7c6060dbdf087d34.png" style="height:40% ;width:40%">
-                <b>Определение</b>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63133/7c6060dbdf087d34.png" style="height:40% ;width:40%">
+                    <b>Определение</b>
 
-                <span>Косинусом угла прямоугольного треугольника называется отношение длины прилежащего к этому углу катета к длине гипотенузы.
+                    <span>Косинусом угла прямоугольного треугольника называется отношение длины прилежащего к этому углу катета к длине гипотенузы.
 </span>
-                <span >$$cosB=\frac{AB}{CB},cosC=\frac{AC}{CB}$$</span>
-                <b>Определение</b>
-                <span> Синусом угла прямоугольного треугольника называется отношение длины противолежащего этому углу катета к длине гипотенузы.</span>
-                <span>$$sinB=\frac{AC}{CB},sinC=\frac{AB}{CB}$$</span>
-                <b>Определение</b>
-                <span> Тангенсом угла прямоугольного треугольника называется отношение противолежащего этому углу катета к прилежащему.</span>
-                <span>$$tgB=\frac{AC}{AB},tgC=\frac{AB}{AC}$$</span>
-                <b>Определение</b>
-                <span>Котангенсом угла прямоугольного треугольника называется отношение прилежащего к этому углу катета к противолежащему.</span>
-                <span>$$ctgB=\frac{AB}{AC},ctgC=\frac{AC}{AB}$$</span>
-                <b>Теорема (о корректности определений)</b>
-                <span>Синус, косинус, тангенс и котангенс острого угла зависят только от градусной меры угла и не зависят от расположения и размеров прямоугольного треугольника.</span>
-                <b> Задача</b>
-                <span>По данным чертежа определите: $$sinC,cosC,tgC,ctgC$$.</span>
-                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63137/98cf920a212461a3.png" style="height:40% ;width:40%">
-                <b>Решение</b>
-                <span>Заметим, что АВ=1,ВС=5. Тогда, по теореме Пифагора, $$AC^{2}=BC^{2}+AB^{2}$$,$$AC^{2}=1^{2}+5^{2}=26,AC=\sqrt{26}$$</span>
-                <span>По определениям синуса,косинуса,тангенса и котангенса угла получаем,что $$sinC=\frac{AB}{AC}=\frac{1}{\sqrt{26}}=\frac{\sqrt{26}}{26};$$
+                    <span >$$cosB=\frac{AB}{CB},cosC=\frac{AC}{CB}$$</span>
+                    <b>Определение</b>
+                    <span> Синусом угла прямоугольного треугольника называется отношение длины противолежащего этому углу катета к длине гипотенузы.</span>
+                    <span>$$sinB=\frac{AC}{CB},sinC=\frac{AB}{CB}$$</span>
+                    <b>Определение</b>
+                    <span> Тангенсом угла прямоугольного треугольника называется отношение противолежащего этому углу катета к прилежащему.</span>
+                    <span>$$tgB=\frac{AC}{AB},tgC=\frac{AB}{AC}$$</span>
+                    <b>Определение</b>
+                    <span>Котангенсом угла прямоугольного треугольника называется отношение прилежащего к этому углу катета к противолежащему.</span>
+                    <span>$$ctgB=\frac{AB}{AC},ctgC=\frac{AC}{AB}$$</span>
+                    <b>Теорема (о корректности определений)</b>
+                    <span>Синус, косинус, тангенс и котангенс острого угла зависят только от градусной меры угла и не зависят от расположения и размеров прямоугольного треугольника.</span>
+                    <b> Задача</b>
+                    <span>По данным чертежа определите: $$sinC,cosC,tgC,ctgC$$.</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63137/98cf920a212461a3.png" style="height:40% ;width:40%">
+                    <b>Решение</b>
+                    <span>Заметим, что АВ=1,ВС=5. Тогда, по теореме Пифагора, $$AC^{2}=BC^{2}+AB^{2}$$,$$AC^{2}=1^{2}+5^{2}=26,AC=\sqrt{26}$$</span>
+                    <span>По определениям синуса,косинуса,тангенса и котангенса угла получаем,что $$sinC=\frac{AB}{AC}=\frac{1}{\sqrt{26}}=\frac{\sqrt{26}}{26};$$
     $$cosC=\frac{BC}{AC}=\frac{5}{\sqrt{26}}=\frac{5\sqrt{26}}{26};$$
     $$tgC=\frac{AB}{BC}=\frac{1}{5};$$
     $$tgC=\frac{BC}{AB}=\frac{5}{1}=5;$$
   </span>
-                <b> Задача</b>
-                <span>Точка М - точка пересечения медиан треугольника АВС. Найдите тангенс угла ВКС, если ВМ=\(\sqrt{2}\)</span>
-                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63141/3d7bd49d56e5b9b5.png" style="height:40% ;width:40%">
-                <b>Решение</b>
-                <span>1) По свойству медианы треугольника, \(\frac{BM}{MK}=\frac{2}{1}\).Значит, \(MK=\frac{1}{2} BM=\frac{\sqrt{2}}{2}.\)</span>
-                <span>2) Рассмотрим \(\bigtriangleup MKC(\angle M=90^{\circ }).tg MKC=\frac{MC}{MK}=MC:\frac{\sqrt{2}}{2}=\sqrt{2}MC,MC=\frac{\sqrt{2}tgMKC}{2}.\) </span>
-                <span>3) Рассмотрим \(\bigtriangleup BMC(\angle M=90^{\circ }).\) По сумме угов треугольника,\(\angle BCM=90^{\circ }-\angle MBC)\).
-  Но из треугольника BCK\(\angle C=90^{\circ }):\angle KBC=90^{\circ }-\angle BKC.\)
+                    <b> Задача</b>
+                    <span>Точка М - точка пересечения медиан треугольника АВС. Найдите тангенс угла ВКС, если ВМ=\(\sqrt{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63141/3d7bd49d56e5b9b5.png" style="height:40% ;width:40%">
+                    <b>Решение</b>
+                    <span>1) По свойству медианы треугольника, \(\frac{BM}{MK}=\frac{2}{1}\).Значит, \(MK=\frac{1}{2} BM=\frac{\sqrt{2}}{2}.\)</span>
+                    <span>2) Рассмотрим \(\bigtriangleup MKC(\angle M=90^{\circ }).\)\(tg MKC=\frac{MC}{MK}=MC:\frac{\sqrt{2}}{2}=\sqrt{2}MC,MC=\frac{\sqrt{2}tgMKC}{2}.\) </span>
+                    <span>3) Рассмотрим \(\bigtriangleup BMC(\angle M=90^{\circ }).\) По сумме угов треугольника,\(\angle BCM=90^{\circ }-\angle MBC)\).
+  Но из треугольника BCK(\(\angle C=90^{\circ }):\angle KBC=90^{\circ }-\angle BKC.\)
   Значит,\(\angle BCM=90^{\circ }-(90^{\circ }-\angle BKC)=\angle BKC\)
   </span>
-                <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63142/3c5d573d4e3d7439.png" style="height:40% ;width:40%">
-                <span>Далее,\(tgBCM=\frac{BM}{CM}.\)Следовательно, \(tgBKC=\frac{\sqrt{2}}{CM}.\).А учитывая пункт 2),\(tgBKC=\sqrt{2}:\frac{\sqrt{2}tgMKC}{2}=\frac{2}{tgMKC}.\)</span>
-                <span>Значит,\(tgBKC=\frac{2}{tgBKC},tg^{2}BKC = 2,tgBKC=\sqrt{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63142/3c5d573d4e3d7439.png" style="height:40% ;width:40%">
+                    <span>Далее,\(tgBCM=\frac{BM}{CM}.\)Следовательно, \(tgBKC=\frac{\sqrt{2}}{CM}.\).А учитывая пункт 2),\(tgBKC=\sqrt{2}:\frac{\sqrt{2}tgMKC}{2}=\frac{2}{tgMKC}.\)</span>
+                    <span>Значит,\(tgBKC=\frac{2}{tgBKC},tg^{2}BKC = 2,tgBKC=\sqrt{2}\)</span>
 
-            </p>
+                </p>
+                </div>
             </div>
-        </div>
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции произвольного угла</a>
-            </div>
-            <div class="accordeon__body"><p class="accordeon__body_p">
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие функции произвольного угла</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
               <span>
                 Рассмотрим окружность радиуса   R с центром в начале прямоугольной системой координат Oxy.
               </span>
-                <img src="https://resolventa.ru/sprris/trig/tfarb/tf6.png" style="height:25% ;width:25%">
-                <span>Положительным считается угол NOM, сторона OM которого получена из положительной полуоси Ox в результате поворота, осуществляемого в направлении движения против часовой стрелки (рис.1).</span>
-                <img src="https://resolventa.ru/sprris/trig/tfarb/tf7.png" style="height:25% ;width:25%">
-                <span>Отрицательным считается угол NOM, сторона OM которого получена из положительной полуоси Ox в результате поворота, осуществляемого в направлении, совпадающем с направлением движения часовой стрелки (рис. 2).
+                    <img src="https://resolventa.ru/sprris/trig/tfarb/tf6.png" style="height:30% ;width:30%">
+                    <span>Положительным считается угол NOM, сторона OM которого получена из положительной полуоси Ox в результате поворота, осуществляемого в направлении движения против часовой стрелки (рис.1).</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfarb/tf7.png" style="height:30% ;width:30%">
+                    <span>Отрицательным считается угол NOM, сторона OM которого получена из положительной полуоси Ox в результате поворота, осуществляемого в направлении, совпадающем с направлением движения часовой стрелки (рис. 2).
 
                 Если для координат точки   M0 , лежащей на окружности радиуса R с центром в начале координат O (рис. 3),</span>
-                <img src="https://resolventa.ru/sprris/trig/tfarb/tf8.png" style="height:25% ;width:25%">
-                <span>ввести обозначение \(M_{0}=(x_{0};y_{0}),\)то, в силу теоремы Пифагора, будет справедливо равенство:\(x^{2}_{0}+y^{2}_{0}=R^{2}_{0}\).</span>
-                <span>Можно сформулировать следующее общее определение тригонометрических функций произвольного угла.</span>
-                <span>Cинусом, косинусом, тангенсом и котангенсом произвольного угла α называют числа, определяемые по формулам:
+                    <img src="https://resolventa.ru/sprris/trig/tfarb/tf8.png" style="height:30% ;width:30%">
+                    <span>ввести обозначение \(M_{0}=(x_{0};y_{0}),\)то, в силу теоремы Пифагора, будет справедливо равенство:\(x^{2}_{0}+y^{2}_{0}=R^{2}_{0}\).</span>
+                    <span>Можно сформулировать следующее общее определение тригонометрических функций произвольного угла.</span>
+                    <span>Cинусом, косинусом, тангенсом и котангенсом произвольного угла α называют числа, определяемые по формулам:
 $$sin\alpha=\frac{y_{0}}{R},cos\alpha=\frac{x_{0}}{R},tg\alpha=\frac{y_{0}}{x_{0}},ctg\alpha=\frac{x_{0}}{y_{0}}$$
 
             </span>
-                <b>Замечание 1.</b>
-                <span>Отметим следующее важное свойство тригонометрических функций синуса и косинуса произвольного угла:
+                    <b>Замечание 1.</b>
+                    <span>Отметим следующее важное свойство тригонометрических функций синуса и косинуса произвольного угла:
               $$-1\le sin\alpha\le 1,-1\le cos\alpha\le 1.$$
             </span>
-                <b>Замечание 2.</b>
-                <span>Определение тригонометрических функций произвольного угла является естественным обобщением определения тригонометрических функций острого угла, данного в разделе справочника "Тригонометрические функции острого угла".</span>
-                <span>Рассмотрим окружность радиуса 1 с центром в начале координат. Если для координат точки   M1 (рис. 4), лежащей на этой окружности,</span>
-                <img src="https://resolventa.ru/sprris/trig/tfarb/tf9.png" style="height:25% ;width:25%">
+                    <b>Замечание 2.</b>
+                    <span>Определение тригонометрических функций произвольного угла является естественным обобщением определения тригонометрических функций острого угла, данного в разделе справочника "Тригонометрические функции острого угла".</span>
+                    <span>Рассмотрим окружность радиуса 1 с центром в начале координат. Если для координат точки   M1 (рис. 4), лежащей на этой окружности,</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfarb/tf9.png" style="height:30% ;width:30%">
+                    <span>ввести обозначение \(M_{1}=(x_{1};y_{1}),\)то, в силу теоремы Пифагора, будет справедливо равенство:\(x^{2}_{1}+y^{2}_{1}=1\),а синус, косинус, тангенс и котангенс угла α будут вычисляться по формулам
+            $$sin\alpha=y_{1},cos\alpha=x_{1},tg\alpha=\frac{y_{1}}{x_{1}},ctg\alpha=\frac{x_{1}}{y_{1}}$$
+           </span>
+                    <span>Из этих формул, в частности, вытекает основное тригонометрическое тождество:\(sin^{2}\alpha+cos^{2}\alpha=1\)</span>
+                    <span>Таким образом, основное тригонометрическое тождество является теоремой Пифагора, сформулированной с помощью тригонометрических функций.</span>
+                    <span>Окружность радиуса 1, изображенную на рисунке 4, называют тригонометрическим кругом или числовой окружностью.</span>
+
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Измерение углов. Градусы и радианы</a>
+                </div>
+                <div class="accordeon__body" ><p class="accordeon__body_p">
+                    <span>Рассмотрим тригонометрические круги, изображенные на рисунках.</span>
+                    <img src="https://resolventa.ru/sprris/trig/measure/tf10.png" style="height:30% ;width:30%">
+                    <img src="https://resolventa.ru/sprris/trig/measure/tf11.png" style="height:30% ;width:30%">
+                    <span>На тригонометрическом круге, изображенном на рисунке 1, центральные углы измерены в градусах, а на тригонометрическом круге, изображенном на рисунке 2, те же центральные углы измерены в радианах.</span>
+                    <span>Углом в   1   градус называют угол, составляющий \(\frac{1}{360}\) полного угла. Углом в   k°   называют угол в   k   раз больший угла в   1° .</span>
+                    <span>Углом в  1  радиан называют центральный угол тригонометрического круга, которому соответствует дуга окружности тригонометрического круга длиной   1 .   Углом в   k   радиан называют центральный угол тригонометрического круга в   k   раз больший угла в   1   радиан.</span>
+                    <b>СЛЕДСТВИЕ 1.</b>
+                    <span>Углом в   k   радиан является центральный угол тригонометрического круга, которому соответствует дуга окружности тригонометрического круга длиной   k .</span>
+                    <b>СЛЕДСТВИЕ 2. </b>
+                    <span>Полный угол является углом в   2π   радиан.</span>
+                    <span>Для того, чтобы найти формулы, связывающие градусную и радианную меры угла, рассмотрим рисунки</span>
+                    <img src="https://resolventa.ru/sprris/trig/measure/tf12.png" style="height:30% ;width:30%">
+                    <img src="https://resolventa.ru/sprris/trig/measure/tf13.png" style="height:30% ;width:30%">
+                    <span>На этих рисунках изображены прямые углы, причем на первом рисунке прямой угол измерен в градусах и равен   90° ,   а на втором рисунке  прямой угол измерен в радианах и равен \(\frac{\pi}{2}\). Следовательно,
+              $$90\cdot 1^{\circ }\iff \frac{\pi}{2}\cdot 1 радиан$$
+            </span>
+                    <span>Таким образом, формулы, связывающие градусную и радианную меры угла, имеют вид
+              $$1^{\circ }\iff \frac{k\pi}{180}радиан$$
+              $$k^{\circ }\iff \frac{k\pi}{180}радиан$$
+              $$1 радиан \iff (\frac{180}\pi{})^{\circ }$$
+              $$(n )радиан\iff (\frac{180n}{\pi})^{\circ }.$$
+            </span>
+                    <span>Поскольку \(\pi\approx 3,14\), то
+              $$1радиан\iff (\frac{180}{\pi})^{\circ }\approx (\frac{180}{3,14})^{\circ }=57,32^{\circ }$$
+            </span>
+                    <span>По этой причине углы, составляющие целое число радиан, изображаются на тригонометрическом круге так, как это показано на рисунке</span>
+                    <img src="https://resolventa.ru/sprris/trig/measure/tf14.png" style="height:30% ;width:30%">
+                    <b>ЗАМЕЧАНИЕ.</b>
+                    <span>Тригонометрическая формула sin α означает, что рассматривается синус угла в   α   радиан, а тригонометрическая формула   sin α°   означает, что рассматривается синус угла в   α   градусов. По такому же правилу определяются значения косинуса, тангенса и котангенса.</span>
+                    <b>Пример</b>
+                    <span>Найти наименьшее из чисел:
+              $$cos35^{\circ },cos\frac{\pi}{2},cos3,cos5.$$
+            </span>
+                    <b>Решение</b>
+                    <span>Поскольку
+              $$cos35^{\circ }>0, cos\frac{\pi}{2}=0,cos3<0,cos5>0$$
+
+            </span>
+                    <span>то наименьшим числом является число cos3 .</span>
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Свойства тригонометрических функций</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+                    <span>Знаки чисел $$sin\alpha,cos\alpha,tg\alpha,ctg\alpha$$</span>
+                    <span>определяются тем, в каком квадранте (четверти) координатной плоскости   Oxy   лежит луч   OM</span>
+                    <span style="justify-content: center;">Знак sin α</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf15.png" style="height:30% ;width:30%">
+                    <span style="justify-content: center;">Знак cos α</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf16.png" style="height:30% ;width:30%">
+                    <span style="justify-content: center;">Знак tg α</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf17.png" style="height:30% ;width:30%">
+                    <span style="justify-content: center;">Знак ctg α</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf18.png" style="height:30% ;width:30%">
+                    <span>Рассмотрим рисунок</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf19.png" style="height:30% ;width:30%">
+                    <span>Если луч OM1, изображенный на рисунке 5, повернуть по ходу или против хода часов на полный угол (360 градусов или 2π радиан), то он совместится с самим собой. Следовательно, справедливы формулы:
+              $$sin(\alpha^{\circ }+360^{\circ })=sin\alpha^{\circ },cos(\alpha^{\circ} +360^{\circ })=cos\alpha^{\circ },$$
+              $$sin(\alpha^{\circ }-360^{\circ })=sin\alpha^{\circ },cos(\alpha^{\circ} -360^{\circ })=cos\alpha^{\circ },$$
+             а также формулы:
+             $$sin(\alpha+2\pi)-sin\alpha,cos(\alpha+2\pi)=cos\alpha,$$
+             $$sin(\alpha-2\pi)-sin\alpha,cos(\alpha-2\pi)=cos\alpha.$$
+            </span>
+                    <span>Поворачивая луч  OM1 на полный угол по ходу или против хода часов n раз ( 360n градусов или 2nπ радиан), получаем следующие формулы:
+              $$sin(\alpha^{\circ }+360^{\circ }\cdot n)=sin\alpha^{\circ },n\in Z,$$
+              $$cos(\alpha^{\circ }+360^{\circ }\cdot n)=cos\alpha^{\circ },n\in Z,$$
+              $$sin(\alpha+2\pi)=sin\alpha,n\in Z$$
+              $$cos(\alpha+2\pi)=cos\alpha,n\in Z$$
+             </span>
+                    <span>Таким образом, в случае, когда углы измеряются в градусах, периодами синуса и косинуса являются углы   360° n, \(n\in Z\)</span>
+                    <span>В случае, когда углы измеряются в радианах, периодами синуса и косинуса являются числа   2nπ, \(n\in Z\)</span>
+                    <span>В случае, когда углы измеряются в градусах, наименьшим положительным периодом синуса и косинуса является угол 360°.</span>
+                    <span>В случае, когда углы измеряются в радианах, наименьшим положительным периодом синуса и косинуса является число 2π .</span>
+                    <span>Теперь рассмотрим рисунок</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf20.png"  style="height:30% ;width:30%">
+                    <span>Если луч OM1, изображенный на рисунке 6, повернуть по ходу или против хода часов на развернутый угол (180 градусов или π радиан), то он совместится с лучом OM2 . Следовательно, справедливы формулы:
+                $$sin(\alpha+180^{\circ })=-sin\alpha$$
+                $$cos(\alpha+180^{\circ })=-cos\alpha$$
+                $$sin(\alpha-180^{\circ })=-sin\alpha$$
+                $$cos(\alpha-180^{\circ })=-cos\$$
+                а также формулы:
+                $$sin(\alpha+\pi)=-sin\alpha,cos(\alpha+\pi)=-cos\alpha,$$
+                $$sin(\alpha-\pi)=-sin\alpha,cos(\alpha-\pi)=-cos\alpha.$$
+              </span>
+                    <span>
+                Полученные формулы описывают свойство полупериодичности синуса и косинуса.
+              </span>
+                    <span>Таким образом, в случае, когда углы измеряются в градусах, угол 180° является полупериодом синуса и косинуса.</span>
+                    <span>В случае, когда углы измеряются в радианах, полупериодом синуса и косинуса является число π.</span>
+                    <b>СЛЕДСТВИЕ. </b>
+                    <span>Поскольку
+                $$tg\alpha=\frac{sin\alpha}{cos\alpha},$$
+                $$ctg\alpha=\frac{cos\alpha}{sin\alpha},$$
+                то справедливы формулы:
+                $$tg(\alpha+180^{\circ }\cdot n)=tg\alpha,n\in Z$$
+                $$ctg(\alpha+180^{\circ }\cdot n)=ctg\alpha,n\in Z$$
+                $$tg(\alpha+\pi n)=tg\alpha,n\in Z$$
+                $$ctg(\alpha+\pi n)=ctg\alpha,n\in Z$$
+              </span>
+                    <span>Таким образом, в случае, когда углы измеряются в градусах, периодами тангенса и котангенса являются углы 180° n,\(n\in Z\)</span>
+                    <span>В случае, когда углы измеряются в радианах, периодами тангенса и котангенса являются числа   nπ,\(n\in Z\)</span>
+                    <span>В случае, когда углы измеряются в градусах, наименьшим положительным периодом тангенса и котангенса является угол 180°.</span>
+                    <span>В случае, когда углы измеряются в радианах, наименьшим положительным периодом тангенса и котангенса являются число π.</span>
+                    <span>Рассмотрим рисунок</span>
+                    <img src="https://resolventa.ru/sprris/trig/tfprop/tf21.png"  style="height:30% ;width:30%"></img>
+                    <span>На этом рисунке
+                  $$\angle XOM_{1}=\alpha,\implies M_{1}=(x_{1};y_{1})=(cos\alpha;sin\alpha),$$
+                  $$\angle XOM_{1}=-\alpha,\implies M_{2}=(x_{1};-y_{1})=(cos(-\alpha);sin(-\alpha)).$$
+                </span>
+                    <span>Следовательно, справедливы формулы:
+                  $$sin(-\alpha)=-sin\alpha,cos(-a)=cos\alpha$$
+                </span>
+                    <span>откуда вытекают формулы:
+                  $$tg(-\alpha)=-tg\alpha,ctg(-a)=-ctg\alpha$$
+                </span>
+
+                    <span>Таким образом, косинус – четная функция, а синус, тангенс и котангенс – нечетные функции.
+
+                </span>
 
 
-            </p>
+
+
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Графики тригонометрических функций</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+             <span>
+              На рисунках  приведены графики тригонометрических функций
+             </span>
+                    <span>y = sin x</span>
+                    <img src="https://resolventa.ru/sprris/trig/graf/tf27w400.png"  style="height:30% ;width:30%">
+                    <span>y = cos x</span>
+                    <img src="https://resolventa.ru/sprris/trig/graf/tf28w400.png"  style="height:30% ;width:30%">
+                    <span>y = tg x</span>
+                    <img src="https://resolventa.ru/sprris/trig/graf/tf29w400.png"  style="height:30% ;width:30%">
+                    <span>y = ctg x</span>
+                    <img src="https://resolventa.ru/sprris/trig/graf/tf30w400.png"  style="height:30% ;width:30%">
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Формулы приведения</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+                    <span>Рассмотрим рисунок</span>
+                    <img src="https://resolventa.ru/sprris/trig/reduction/tf22.png"  style="height:30% ;width:30%">
+                    <span>На этом рисунке
+                $$\angle XOM_{1}=\alpha, M_{1}=(cos\alpha;sin\alpha)=(x_{1};y_{1}),$$
+                $$\angle XOM_{2}=\frac{\pi}{2}+\alpha$$
+                $$M_{2}=(cos(\frac{\pi}{2}+\alpha);sin(\frac{\pi}{2}+\alpha))=(-y_{1};x_{1})=(-sin\alpha;cos\alpha)$$
+              </span>
+                    <span>Следовательно, справедливы формулы:
+                $$cos(\frac{\pi}{2}+\alpha)=-sin\alpha,$$
+                $$sin(\frac{\pi}{2}+\alpha)=cos\alpha$$
+              </span>
+                    <span>откуда вытекают формулы:
+                $$tg(\frac{\pi}{2}+\alpha)=-ctg\alpha$$
+                $$ctg(\frac{\pi}{2}+\alpha)=-tg\alpha$$
+              </span>
+                    <span>Если же в формулах сделать замену: α → – α, то, воспользовавшись свойствами четности тригонометрических функций, мы получим формулы:</span>
+                    <span>
+                $$cos(\frac{\pi}{2}-\alpha)=sin\alpha$$
+                $$sin(\frac{\pi}{2}-\alpha)=cos\alpha$$
+                $$tg(\frac{\pi}{2}-\alpha)=ctg\alpha$$
+                $$ctg(\frac{\pi}{2}-\alpha)=tg\alpha$$
+              </span>
+                    <span>Все полученные нами формулы называют формулами приведения</span>
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Основные тригонометрические формулы</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+              <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Связи между тригонометрическими функциями одного угла}$$
+              </span>
+                    <span>
+                $$sin^{2}\alpha+cos^{2}\alpha=1$$
+                $$tg\alpha=\frac{sin\alpha}{cos\alpha},\alpha\neq \frac{\pi}{2}+\pi n,n\in Z$$
+                $$ctg\alpha=\frac{cos\alpha}{sin\alpha},\alpha\neq \pi n,n\in Z$$
+                $$tg\alpha\cdot ctg\alpha=1,\alpha\neq\frac{\pi n}{2} ,n\in Z$$
+                $$1+tg^{2}\alpha=\frac{1}{cos^{2}\alpha},\alpha\neq \frac{\pi}{2}+\pi n,n\in Z$$
+                $$1+ctg^{2}\alpha=\frac{1}{sin^{2}\alpha},\alpha\neq \pi n,n\in Z$$
+
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Тригонометрические функции суммы и разности двух углов}$$
+              </span>
+                    <span>
+                $$sin(\alpha+\beta)=sin\alpha\cdot cos\beta+cos\alpha\cdot sin\beta$$
+                $$sin(\alpha-\beta)=sin\alpha\cdot cos\beta-cos\alpha\cdot sin\beta$$
+                $$cos(\alpha+\beta)=cos\alpha\cdot cos\beta-sin\alpha\cdot sin\beta$$
+                $$cos(\alpha-\beta)=cos\alpha\cdot cos\beta+sin\alpha\cdot sin\beta$$
+                $$tg(\alpha+\beta)=\frac{tg\alpha+tg\beta}{1-tg\alpha\cdot tg\beta},\alpha,\beta,\alpha+\beta\neq \frac{\pi}{2}+\pi n,n\in Z$$
+                $$tg(\alpha-\beta)=\frac{tg\alpha-tg\beta}{1+tg\alpha\cdot tg\beta},\alpha,\beta,\alpha-\beta\neq \frac{\pi}{2}+\pi n,n\in Z$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Тригонометрические функции двойного угла}$$
+              </span>
+                    <span>
+                $$sin2\alpha=2sin\alpha\cdot cos\alpha$$
+                $$cos2\alpha=cos^{2}\alpha-sin^{2}\alpha$$
+                $$cos2\alpha=2cos^{2}\alpha-1$$
+                $$cos2\alpha=1-2sin^{2}\alpha$$
+                $$tg2\alpha=\frac{2tg\alpha}{1-tg^{2}\alpha},\alpha\neq \frac{\pi}{4}+\frac{\pi n}{2},n\in Z$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Формулы понижения степени для квадратов тригонометрических функций}$$
+              </span>
+                    <span>
+                $$sin^{2}\alpha=\frac{1-cos2\alpha}{2}$$
+                $$cos^{2}\alpha=\frac{1+cos2\alpha}{2}$$
+                $$tg^{2}\alpha=\frac{1-cos2\alpha}{1+cos2\alpha},\alpha\neq \frac{\pi}{2}+\pi n,n\in Z$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Формулы понижения степени для кубов синуса и косинуса}$$
+              </span>
+                    <span>
+                $$sin^{3}\alpha=\frac{1}{4}(3sin\alpha-sin3\alpha)$$
+                $$cos^{3}\alpha=\frac{1}{4}(3cos\alpha-cos3\alpha)$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Выражение тангенса через синус и косинус двойного угла}$$
+              </span>
+                    <span>
+                $$tg\alpha=\frac{sin2\alpha}{1+cos2\alpha}=\frac{1-cos2\alpha}{sin2\alpha},\alpha\neq \frac{\pi}{2}+\pi n,n\in Z$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Преобразование суммы тригонометрических функций в произведение}$$
+              </span>
+                    <span>
+                $$sin\alpha+sin\beta=2sin\frac{\alpha+\beta}{2}cos\frac{\alpha-\beta}{2}$$
+                $$sin\alpha-sin\beta=2sin\frac{\alpha-\beta}{2}cos\frac{\alpha+\beta}{2}$$
+                $$cos\alpha+cos\beta=2cos\frac{\alpha+\beta}{2}cos\frac{\alpha+\beta}{2}$$
+                $$cos\alpha-cos\beta=-2sin\frac{\alpha+\beta}{2}sin\frac{\alpha-\beta}{2}$$
+                $$tg\alpha+tg\beta=\frac{sin(\alpha+\beta)}{cos\alpha\cdot cos\beta},\alpha,\beta\neq \frac{\pi}{2}+\pi n,n\in Z$$
+                $$tg\alpha-tg\beta=\frac{sin(\alpha-\beta)}{cos\alpha\cdot cos\beta},\alpha,\beta\neq \frac{\pi}{2}+\pi n,n\in Z$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Преобразование произведения тригонометрических функций в сумму}$$
+              </span>
+                    <span>
+                $$sin\alpha\cdot sin\beta=\frac{1}{2}(cos(\alpha-\beta)-cos(\alpha+\beta))$$
+                $$cos\alpha\cdot cos\beta=\frac{1}{2}(cos(\alpha-\beta)+cos(\alpha+\beta))$$
+                $$sin\alpha\cdot cos\beta=\frac{1}{2}(sin(\alpha+\beta)+sin(\alpha-\beta))$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Выражение тригонометрических функций через тангенс половинного угла}$$
+              </span>
+                    <span>
+                $$sin\alpha=\frac{2tg\frac{\alpha}{2}}{1+tg^{2}\frac{\alpha}{2}},\alpha\neq (2n+1)\pi,n\in Z$$
+                $$cos\alpha=\frac{1-tg^{2}\frac{\alpha}{2}}{1+tg^{2}\frac{\alpha}{2}},\alpha\neq (2n+1)\pi,n\in Z$$
+                $$tg\alpha=\frac{2tg\frac{\alpha}{2}}{1-tg^{2}\frac{\alpha}{2}},\alpha\neq (2n+1)\pi,n\in Z$$
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Тригонометрические функции тройного угла}$$
+              </span>
+                    <span>
+                $$sin3\alpha=3sin\alpha-4sin^{3}\alpha$$
+                $$sin3\alpha=4cos^{3}\alpha-3cos\alpha$$
+                $$tg3\alpha=\frac{3tg\alpha-tg^{3}\alpha}{1-3tg^{2}\alpha},\alpha\neq \frac{\pi}{6}+\frac{\pi n}{3},n\in Z$$
+              </span>
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Обратные тригонометрические функции</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+                    <b>ОПРЕДЕЛЕНИЕ 1.</b>
+                    <span>Пусть число a удовлетворяет неравенству  \(1\le \alpha\le 1\). Число x называют арксинусом числа a и обозначают   x = arcsin a, если выполнены два условия:
+              $$1.sinx=\alpha$$
+              $$2.x\in [-\frac{\pi}{2};\frac{\pi}{2}]$$
+            </span>
+                    <b>ОПРЕДЕЛЕНИЕ 2.</b>
+                    <span>Рассмотрим произвольное число a . Число x называют арктангенсом числа a и обозначают   x = arctg a, если выполнены два условия:
+              $$1.cosx=\alpha$$
+              $$2.x\in [0;\pi]$$
+            </span>
+                    <b>ОПРЕДЕЛЕНИЕ 3.</b>
+                    <span>Пусть число a удовлетворяет неравенству  \(1\le \alpha\le 1\). Число x называют арксинусом числа a и обозначают   x = arcsin a, если выполнены два условия:
+              $$1.tgx=\alpha$$
+              $$2.x\in [-\frac{\pi}{2};\frac{\pi}{2}]$$
+            </span>
+                    <b>ОПРЕДЕЛЕНИЕ 2.</b>
+                    <span>Рассмотрим произвольное число a . Число x называют арккотангенсом числа a и обозначают   x = arcctg a, если выполнены два условия:
+              $$1.ctgx=\alpha$$
+              $$2.x\in [0;\pi]$$
+            </span>
+                    <span>Арксинус, арккосинус, арктангенс и арккотангенс удовлетворяют, в частности, следующим соотношениям:
+              $$arcsin\alpha+arccos\alpha=\frac{\pi}{2}$$
+              $$arctg\alpha+arcctg\alpha=\frac{\pi}{2}$$
+              $$arcsin(-\alpha)=-arcsin\alpha$$
+              $$arccos(-\alpha)=\pi-arccos\alpha$$
+              $$arctg(-\alpha)=-arctg\alpha$$
+              $$arcctg(-\alpha)=\pi-arcctg\alpha$$
+            </span>
+                    <span>
+              Обратными тригонометрическими функциями называют функции:
+              $$y=arcsin x,x\in [-1;1]$$
+              $$y=arccos x,x\in [-1;1]$$
+              $$y=arctg x,x\in [-\infty ;\infty ]$$
+              $$y=arcctg x,x\in [-\infty ;\infty ]$$
+            </span>
+                    <span> График функции   y = arcsin x</span>
+                    <img src="https://resolventa.ru/sprris/trig/inverse/tf31w300.png"  style="height:30% ;width:30%">
+                    <span> График функции   y = arccos x</span>
+                    <img src="https://resolventa.ru/sprris/trig/inverse/tf32w300.png"  style="height:30% ;width:30%">
+                    <span> График функции   y = arctg x</span>
+                    <img src="https://resolventa.ru/sprris/trig/inverse/tf33w300.png"  style="height:30% ;width:30%">
+                    <span> График функции   y = arcctg x</span>
+                    <img src="https://resolventa.ru/sprris/trig/inverse/tf34w300.png"  style="height:30% ;width:30%">
+                    <b>ПРИМЕР</b>
+                    <span>Решить уравнение \(2arcsin2x=arccos7x\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Возьмём косинус от обеих частей уравнения. Тогда в левой части уравнения получим:
+            $$cos(2arcsin2x)=1-2sin^{2}(arcsin2x)=1-2(2x)^{2}=1-8x^{2}$$
+            В правой части уравнения получим:
+            $$cos(arccos7x)=7x$$
+            Следовательно, возникает квадратное уравнение:
+            $$1-8x^{2}=7x$$
+            $$8x^{2}+7x-1=0$$
+            $$x_{1}=\frac{-7+\sqrt{49+32}}{16}=\frac{-7+9}{16}=\frac{1}{8}$$
+            $$x_{1}=\frac{-7-\sqrt{49+32}}{16}=\frac{-7-9}{16}=-1$$
+           </span>
+                    <span>В силу того, что область определения обратных тригонометрических функций   y = arcsin x и   y = arccos x   имеет вид:
+            \(x\in [-1;1]\), второй корень должен быть отброшен.
+           </span>
+                    <b>OТВЕТ:\(\frac{1}{8}\)</b>
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Простейшие тригонометричекие уравнения</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+              <span>Простейшими тригонометрическими уравнениями называют уравнения вида:
+                $$sinx=\alpha,cosx=\alpha,tgx=\alpha,ctgx=\alpha$$
+                где a – произвольное число.
+              </span>
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Решение уравнения   sin x = a}$$
+              </span>
+                    <span>Обычная форма записи решения:
+                $$x=(-1)^{n}arcsin\alpha+\pi n,n\in Z$$
+              </span>
+                    <span>Более удобная форма записи решения:
+                $$x_{1}=arcsin\alpha+2\pi n,n\in Z$$
+                $$x_{2}=-arcsin\alpha+\pi+2\pi n,n\in Z$$
+              </span>
+                    <span>
+                Ограничения на число a: в случае, когда \(\alpha\notin [-1;1]\)
+                , уравнение решений не имеет. </span>
+                    <span>
+                Графическое обоснование решения уравнения   sin x = a   представлено на рисунке
+              </span>
+                    <img src="https://resolventa.ru/sprris/trig/equation/tf23w300.png"  style="height:30% ;width:30%">
+                    <b>Частные случаи решения уравнений   sin x = a</b>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=-1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x=-\frac{\pi}{2}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=-\frac{\sqrt{3}}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{3}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{4\pi}{3}+2\pi n,n\in Z$$
+              </span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=-\frac{1}{\sqrt{2}}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{4}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{5\pi}{4}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=-\frac{1}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{6}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{7\pi}{6}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=0$$</span>
+                    <b></b>
+                    <span>$$x=\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=\frac{1}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{6}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{5\pi}{6}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=\frac{1}{\sqrt{2}}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{4}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{3\pi}{4}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=\frac{\sqrt{3}}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{3}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{2\pi}{3}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$sinx=1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x=\frac{\pi}{2}+2\pi n,n\in Z$$</span>
+
+
+
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Решение уравнения   cos x = a}$$
+              </span>
+                    <span>Обычная форма записи решения:
+                $$x=\pm arccos\alpha+2\pi n,n\in Z$$
+              </span>
+                    <span>Более удобная форма записи решения:
+                $$x_{1}=arccos\alpha+2\pi n,n\in Z$$
+                $$x_{2}=x_{2}=-arccos\alpha+2\pi n,n\in Z$$
+              </span>
+                    <span>
+                Ограничения на число a: в случае, когда \(\alpha\notin [-1;1]\)
+                , уравнение решений не имеет. </span>
+                    <span>
+                Графическое обоснование решения уравнения   cos x = a   представлено на рисунке
+              </span>
+                    <img src="https://resolventa.ru/sprris/trig/equation/tf24w300.png"  style="height:30% ;width:30%">
+                    <b>Частные случаи решения уравнений   cos x = a</b>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=-1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x=\pi+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=-\frac{\sqrt{3}}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{5\pi}{6}+2\pi n,n\in Z$$
+                $$x_{2}=-\frac{5\pi}{6}+2\pi n,n\in Z$$
+              </span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=-\frac{1}{\sqrt{2}}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{3\pi}{4}+2\pi n,n\in Z$$
+                $$x_{2}=-\frac{3\pi}{4}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=-\frac{1}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{2\pi}{3}+2\pi n,n\in Z$$
+                $$x_{2}=-\frac{2\pi}{3}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=0$$</span>
+                    <b></b>
+                    <span>$$\frac{\pi}{2}+\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=\frac{1}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{3}+2\pi n,n\in Z$$
+                $$x_{2}=-\frac{\pi}{3}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=\frac{1}{\sqrt{2}}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{4}+2\pi n,n\in Z$$
+                $$x_{2}=-\frac{\pi}{4}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=\frac{\sqrt{3}}{2}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{6}+2\pi n,n\in Z$$
+                $$x_{2}=-frac{\pi}{6}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$cosx=1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x=2\pi n,n\in Z$$</span>
+
+
+
+                    <span style="font-size: 20px;">
+                $$\color{DarkBlue}\text{Решение уравнения   tg x = a}$$
+              </span>
+                    <span>Обычная форма записи решения:
+                $$x=arctg\alpha+\pi n,n\in Z$$
+              </span>
+                    <span>Более удобная форма записи решения:
+                $$x_{1}=arctg\alpha+2\pi n,n\in Z$$
+                $$x_{1}=arctg\alpha+\pi+2\pi n,n\in Z$$
+              </span>
+                    <span>
+                Ограничения на число a: ограничений нет. </span>
+                    <span>
+                Графическое обоснование решения уравнения   tg x = a  представлено на рисунке
+              </span>
+                    <img src="https://resolventa.ru/sprris/trig/equation/tf25w300.png"  style="height:30% ;width:30%">
+                    <b>Частные случаи решения уравнений   tg x = a </b>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=-\sqrt{3}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{3}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{2\pi}{3}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=-1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{4}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{3\pi}{4}+2\pi n,n\in Z$$
+              </span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=-\frac{1}{\sqrt{3}}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{6}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{5\pi}{6}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=0$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\pi n,n\in Z$$
+                </span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=\frac{1}{\sqrt{3}}$$</span>
+                    <b></b>
+                    <span>$$x_{1}=\frac{\pi}{6}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{7\pi}{6}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{4}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{5\pi}{4}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=\sqrt{3}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{3}+2\pi n,n\in Z$$
+                $$x_{2}=\frac{4\pi}{3}+2\pi n,n\in Z$$</span>
+
+
+
+                    <span style="font-size: 20px;">
+                  $$\color{DarkBlue}\text{Решение уравнения   сtg x = a}$$
+                </span>
+                    <span>Обычная форма записи решения:
+                  $$x=arсctg\alpha+\pi n,n\in Z$$
+                </span>
+                    <span>Более удобная форма записи решения:
+                  $$x_{1}=arcсtg\alpha+2\pi n,n\in Z$$
+                  $$x_{1}=arcсtg\alpha+\pi+2\pi n,n\in Z$$
+                </span>
+                    <span>
+                  Ограничения на число a: ограничений нет. </span>
+                    <span>
+                  Графическое обоснование решения уравнения   сtg x = a  представлено на рисунке
+                </span>
+                    <img src="https://resolventa.ru/sprris/trig/equation/tf26w300.png"  style="height:30% ;width:30%">
+                    <b>Частные случаи решения уравнений   сtg x = a </b>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=-\sqrt{3}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{6}+2\pi n,n\in Z$$
+                  $$x_{2}=\frac{5\pi}{6}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=-1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{4}+2\pi n,n\in Z$$
+                  $$x_{2}=\frac{3\pi}{4}+2\pi n,n\in Z$$
+                </span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=-\frac{1}{\sqrt{3}}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=-\frac{\pi}{3}+2\pi n,n\in Z$$
+                  $$x_{2}=\frac{2\pi}{3}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=0$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{2}+\pi n,n\in Z$$
+                  </span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=\frac{1}{\sqrt{3}}$$</span>
+                    <b></b>
+                    <span>$$x_{1}=\frac{\pi}{3}+2\pi n,n\in Z$$
+                  $$x_{2}=\frac{4\pi}{3}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=1$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{4}+2\pi n,n\in Z$$
+                  $$x_{2}=\frac{5\pi}{4}+2\pi n,n\in Z$$</span>
+                    <b>
+                        Уравнение:</b>
+                    <span>$$tg x=\sqrt{3}$$</span>
+                    <b>Решение:</b>
+                    <span>$$x_{1}=\frac{\pi}{6}+2\pi n,n\in Z$$
+                  $$x_{2}=\frac{7\pi}{6}+2\pi n,n\in Z$$</span>
+
+
+                </p>
+                </div>
+            </div>
+            <div class="accordeon__section">
+                <div class="accordeon__header">
+                    <a href="#" class="accordeon__link" onclick="return false">Простейшие тригонометрические неравенства</a>
+                </div>
+                <div class="accordeon__body"><p class="accordeon__body_p">
+                    <span>В этой статье рассмотрим решение простейших тригонометрических неравенств.</span>
+                    <br>
+                    <br>
+                    <b>ОПРЕДЕЛЕНИЕ</b>
+                    <span>Простейшими тригонометрическими неравенствами будем называть неравенства вида
+              $$sin x\vee \alpha,cosx\vee \alpha,tgx\vee \alpha,ctgx\vee \alpha,$$
+              где x — переменная, f — некоторое число, знак \(\vee\) означает один из знаков \(\lt ,\gt ,\le ,\ge .\)
+             </span>
+                    <br>
+                    <br>
+                    <span>Решать тригонометрические неравенства можно с помощью графиков тригонометрических функций, но гораздо удобнее проводить решение тригонометрических неравенств на единичной (тригонометрической) окружности. Разберем несколько примеров.</span>
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(cosx\gt  \frac{\sqrt{3}}{2}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Построим единичную окружность и на линии косинусов отметим точку с абсциссой  \(\frac{\sqrt{3}}{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59296/65bc6726a6192d1e.png"  style="height:30% ;width:30%">
+                    <span>Проведем через эту точку прямую, параллельную оси ординат. Эта прямая пересекает окружность в точках, абсциссы которых равны
+              \(\frac{\sqrt{3}}{2}\).Напомним, что косинусом числа  x называется абсцисса точки, соответствующей числу x на единичной окружности.
+              Выделим дугу, на которой лежат все точки, абсциссы которых больше \(\frac{\sqrt{3}}{2}\), причем концы дуги не войдут в указанное множество точек, так как неравенство строгое (на рисунке эти точки не закрашены). Точка верхней полуокружности с абсциссой
+              \(\frac{\sqrt{3}}{2}\) соответствует числу (углу поворота в радианах) \(arccos\frac{\sqrt{3}}{2}=\frac{\pi}{6}\)
+              Обойдем выделенную дугу от её верхнего конца — точки \(\frac{\pi}{6}\) — до нижнего.
+              Обход осуществлен по часовой стрелке, поэтому в силу симметрии окружности получим, что нижний конец дуги — это точка, соответствующая числу \(-\frac{\pi}{6}\)
+               .
+               Все точки выделенной дуги соответствуют числам x , которые удовлетворяют неравенству \((-\frac{\pi}{6})\lt x\lt \frac{\pi}{6}\) , то есть эти значения  являются решениями неравенства
+               \(cosx\gt \frac{\sqrt{3}}{2}.\)
+               Таким образом, на промежутке \([-\pi;\pi]\) с длиной \(2\pi\) , что составляет период функции косинус, все решения данного неравенства составляют интервал \((-\frac{\pi}{6}; \frac{\pi}{6})\) . С учетом периодичности функции косинус множество решений данного неравенства составит объединение промежутков вида .
+               \((-\frac{\pi}{6}+2\pi k;\frac{\pi}{6}+2\pi k),k\in Z\).
+              </span>
+
+
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(cosx\le \frac{\sqrt{3}}{2}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Построим единичную окружность и на линии косинусов отметим точку с абсциссой  \(\frac{\sqrt{3}}{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59297/585a19407bf270cd.png"  style="height:30% ;width:30%">
+                    <span>Проведем через эту точку прямую, параллельную оси ординат. Эта прямая пересекает окружность в точках, абсциссы которых равны
+              \(\frac{\sqrt{3}}{2}\).Напомним, что косинусом числа  x называется абсцисса точки, соответствующей числу x на единичной окружности.
+              Выделим дугу, на которой лежат все точки, абсциссы которых меньше или равны \(\frac{\sqrt{3}}{2}\), причем концы дуги  войдут в указанное множество точек, так как неравенство нестрогое (на рисунке эти точки закрашены). Точка верхней полуокружности с абсциссой
+              \(\frac{\sqrt{3}}{2}\) соответствует числу (углу поворота в радианах) \(arccos\frac{\sqrt{3}}{2}=\frac{\pi}{6}\)
+              Обойдем выделенную дугу от её верхнего конца — точки \(\frac{\pi}{6}\) — до нижнего.
+              Обход осуществлен против часовой стрелки, поэтому в силу симметрии окружности получим, что нижний конец дуги — это точка, соответствующая числу \(2\pi-\frac{\pi}{6}=\frac{11\pi}{6}\)
+               .
+               Все точки выделенной дуги соответствуют числам x , которые удовлетворяют неравенству \((-\frac{\pi}{6})\le x\le \frac{11\pi}{6}\) , то есть эти значения  являются решениями неравенства
+               \(cosx\le \frac{\sqrt{3}}{2}.\)
+               Таким образом, на промежутке \([0;2\pi]\) с длиной \(2\pi\) ,  все решения данного неравенства составляют интервал \((\frac{\pi}{6}; \frac{11\pi}{6})\) . С учетом периодичности функции косинус множество решений данного неравенства составит объединение промежутков вида .
+               \((\frac{\pi}{6}+2\pi k;\frac{11\pi}{6}+2\pi k),k\in Z\).
+              </span>
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(cosx\le -\frac{\sqrt{3}}{2}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Построим единичную окружность и на линии косинусов отметим точку с абсциссой  \(-\frac{\sqrt{3}}{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59528/6faf91be16ebf19b.png"  style="height:30% ;width:30%">
+                    <span>Проведем через эту точку прямую, параллельную оси ординат. Эта прямая пересекает окружность в точках, абсциссы которых равны
+              \(-\frac{\sqrt{3}}{2}\).Напомним, что косинусом числа  x называется абсцисса точки, соответствующей числу x на единичной окружности.
+              Выделим дугу, на которой лежат все точки, абсциссы которых меньше или равны \(-\frac{\sqrt{3}}{2}\), причем концы дуги  войдут в указанное множество точек, так как неравенство нестрогое (на рисунке эти точки закрашены). Точка верхней полуокружности с абсциссой
+              \(-\frac{\sqrt{3}}{2}\) соответствует числу (углу поворота в радианах) \(arccos-\frac{\sqrt{3}}{2}=\frac{5\pi}{6}\)
+              Обойдем выделенную дугу от её верхнего конца — точки \(\frac{5\pi}{6}\) — до нижнего.
+              Обход осуществлен против часовой стрелки, поэтому в силу симметрии окружности получим, что нижний конец дуги — это точка, соответствующая числу \(\pi+\frac{\pi}{6}=\frac{7\pi}{6}\)
+               .
+               Все точки выделенной дуги соответствуют числам x , которые удовлетворяют неравенству \((\frac{5\pi}{6})\le x\le \frac{7\pi}{6}\) , то есть эти значения  являются решениями неравенства
+               \(cosx\le -\frac{\sqrt{3}}{2}.\)
+               Таким образом, на промежутке \([0;2\pi]\) с длиной \(2\pi\) ,  все решения данного неравенства составляют интервал \((\frac{5\pi}{6}; \frac{7\pi}{6})\) . С учетом периодичности функции косинус множество решений данного неравенства составит объединение промежутков вида .
+               \((\frac{5\pi}{6}+2\pi k;\frac{7\pi}{6}+2\pi k),k\in Z\).
+              </span>
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(cosx\gt -\frac{\sqrt{3}}{2}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Построим единичную окружность и на линии косинусов отметим точку с абсциссой  \(-\frac{\sqrt{3}}{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59532/3cc2731e33dce9ed.png"  style="height:30% ;width:30%">
+                    <span>Проведем через эту точку прямую, параллельную оси ординат. Эта прямая пересекает окружность в точках, абсциссы которых равны
+              \(-\frac{\sqrt{3}}{2}\).Напомним, что косинусом числа  x называется абсцисса точки, соответствующей числу x на единичной окружности.
+              Выделим дугу, на которой лежат все точки, абсциссы которых больше \(-\frac{\sqrt{3}}{2}\), причем концы дуги не войдут в указанное множество точек, так как неравенство строгое (на рисунке эти точки не закрашены). Точка верхней полуокружности с абсциссой
+              \(-\frac{\sqrt{3}}{2}\) соответствует числу (углу поворота в радианах) \(arccos-\frac{\sqrt{3}}{2}=\frac{5\pi}{6}\)
+              Обойдем выделенную дугу от её верхнего конца — точки \(\frac{5\pi}{6}\) — до нижнего.
+              Обход осуществлен по часовой стрелке, поэтому в силу симметрии окружности получим, что нижний конец дуги — это точка, соответствующая числу \(-\frac{5\pi}{6}\)
+               .
+               Все точки выделенной дуги соответствуют числам x , которые удовлетворяют неравенству \((-\frac{5\pi}{6})\lt x\lt \frac{5\pi}{6}\) , то есть эти значения  являются решениями неравенства
+               \(cosx\gt -\frac{\sqrt{3}}{2}.\)
+               Таким образом, на промежутке \([-\pi;\pi]\) с длиной \(2\pi\) , что составляет период функции косинус, все решения данного неравенства составляют интервал \((-\frac{5\pi}{6}; \frac{5\pi}{6})\) . С учетом периодичности функции косинус множество решений данного неравенства составит объединение промежутков вида .
+               \((-\frac{5\pi}{6}+2\pi k;\frac{5\pi}{6}+2\pi k),k\in Z\).
+              </span>
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(sinx\gt -\frac{\sqrt{2}}{2}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Построим единичную окружность и на линии синусов отметим точку с ординатой  \(\frac{\sqrt{2}}{2}\)</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59535/571d207d14039f63.png"  style="height:30% ;width:30%">
+                    <span>Проведем через эту точку прямую, параллельную оси ординат. Эта прямая пересекает окружность в точках, абсциссы которых равны
+              \(\frac{\sqrt{2}}{2}\).Напомним, что косинусом числа  x называется абсцисса точки, соответствующей числу x на единичной окружности.
+              Выделим дугу, на которой лежат все точки, абсциссы которых больше \(\frac{\sqrt{2}}{2}\), причем концы дуги не войдут в указанное множество точек, так как неравенство строгое (на рисунке эти точки не закрашены). Точка верхней полуокружности с абсциссой
+              \(\frac{\sqrt{2}}{2}\) соответствует числу (углу поворота в радианах) \(arcsin\frac{\sqrt{2}}{2}=\frac{\pi}{4}\)
+              Обойдем выделенную дугу от её правого конца — точки \(\frac{\pi}{4}\) — до левого.
+              Обход осуществлен против стрелки, поэтому в силу симметрии окружности получим, что левый конец дуги — это точка, соответствующая числу \(\frac{3\pi}{4}\).
+               Все точки выделенной дуги соответствуют числам x , которые удовлетворяют неравенству \((\frac{\pi}{4})\lt x\lt \frac{3\pi}{4}\) , то есть эти значения  являются решениями неравенства
+               \(sinx\gt -\frac{\sqrt{2}}{2}.\)
+               Таким образом, на промежутке \([0;2\pi]\) с длиной \(2\pi\) , что составляет период функции синус, все решения данного неравенства составляют интервал \((\frac{\pi}{4}; \frac{3\pi}{4})\) . С учетом периодичности функции синус множество решений данного неравенства составит объединение промежутков вида .
+               \((\frac{\pi}{4}+2\pi k;\frac{3\pi}{4}+2\pi k),k\in Z\).
+              </span>
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(tgx\lt \sqrt{3}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Заметим, что неравенства относительно тангенса и котангенса удобно решать функционально-графическим способом.</span>
+                    <span>В одной системе координат построим прямую \(y=\sqrt{3}\) и одну ветвь графика функции \(y=tgx\) на промежутке \((-\frac{\pi}{2};\frac{\pi}{2}).\).</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59541/42a1b85774ed8f4a.png"  style="height:30% ;width:30%">
+                    <span>
+              Прямая \(y=\sqrt{3}\) и график тангенса на промежутке \((-\frac{\pi}{2};\frac{\pi}{2}).\)
+              имеют одну точку пересечения, абсцисса которой равна \(arctg\sqrt{3}=\frac{\pi}{3}\) по определению арктангенса числа \(a\). На промежутке \((-\frac{\pi}{2};\frac{\pi}{2})\)
+               точки графика функции \(y=tgx\), лежащие ниже прямой \(y=\sqrt{3}\), имеют абсциссы,
+                удовлетворяющие неравенству \(-\frac{\pi}{2}\lt x\lt \frac{\pi}{2}\). А это означает, что на промежутке \((-\frac{\pi}{2};\frac{\pi}{2})\) длиной \(\pi\),
+                что равно периоду функции тангенс, множество решений неравенства представляет собой интервал \((-\frac{\pi}{2};\frac{\pi}{3})\). С учетом периодичности функции тангенс множество решений данного неравенства составит
+                 объединение промежутков вида \((-\frac{\pi}{2}+\pi k;\frac{\pi}{3}+\pi k),k\in Z\).
+             </span>
+                    <br>
+                    <br>
+                    <b>ПРИМЕР</b>
+                    <span>Решите неравенство \(ctgx\ge  -\sqrt{3}\)</span>
+                    <b>РЕШЕНИЕ</b>
+                    <span>Заметим, что неравенства относительно тангенса и котангенса удобно решать функционально-графическим способом.</span>
+                    <span>В одной системе координат построим прямую \(y=-\sqrt{3}\) и одну ветвь графика функции \(y=ctgx\) на промежутке \((0;\pi)\).</span>
+                    <img src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/59547/33c27eee2e65cb88.png"  style="height:30% ;width:30%">
+                    <span>
+              Прямая \(y=-\sqrt{3}\) и график котангенса на промежутке \((0;\pi)\)
+              имеют одну точку пересечения, абсцисса которой равна \(arcctg-\sqrt{3}=\frac{5\pi}{6}\) по определению арккотангенса числа \(a\). На промежутке \((-\frac{\pi}{2};\frac{\pi}{2})\)
+               точки графика функции \(y=ctgx\), лежащие на прямой \(y=-\sqrt{3}\) и выше неё, имеют абсциссы,
+                удовлетворяющие неравенству \(0\lt x\le \frac{5\pi}{6}\). А это означает, что на промежутке \((0;\pi)\) длиной \(\pi\),
+                что равно периоду функции котангенс, множество решений неравенства представляет собой полуинтервал \((0;\frac{5\pi}{6}]\). С учетом периодичности функции котангенс множество решений данного неравенства составит
+                 объединение промежутков вида \((\pi k;\frac{5\pi}{6}+\pi k),k\in Z\).
+             </span>
+                </p>
+                </div>
             </div>
         </div>
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Обратные тригонометрические функции</a>
-            </div>
-            <div class="accordeon__body" ><p>
-                ----</p>
-            </div>
         </div>
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Преобразования тригонометрических выражений</a>
-            </div>
-            <div class="accordeon__body"><p>
-                -----
-            </p>
-            </div>
         </div>
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Свойства тригонометрических функций</a>
-            </div>
-            <div class="accordeon__body"><p>
-                ----
-            </p>
-            </div>
-        </div>
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Тригонометричекие уравнения</a>
-            </div>
-            <div class="accordeon__body"><p>
-                -----
-            </p>
-            </div>
-        </div>
-        <div class="accordeon__section">
-            <div class="accordeon__header">
-                <a href="#" class="accordeon__link" onclick="return false">Тригонометрические неравенства</a>
-            </div>
-            <div class="accordeon__body"><p>
-                ---
-            </p>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-</main>
+    </main>
 </body>
 <script>
   document.querySelectorAll('.accordeon__section').forEach((accSection) => {
