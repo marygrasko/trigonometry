@@ -24,6 +24,7 @@ main {
   perspective: 900;
   font-family: "Titillium Web", sans-serif;
   color: rgba(10, 40, 72, 0.8);
+    margin-top: 10px;
 }
 
 .body {
@@ -49,7 +50,7 @@ main {
     transform: translate(0, 0);
     max-width: 100%;
     min-height: 100%;
-    margin: 0;
+    margin-top: 10px;
     left: 0;
   }
 }
