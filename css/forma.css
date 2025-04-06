@@ -1,0 +1,338 @@
+.main{
+    width: 100%;
+}
+.container_form {
+
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #E0E9F4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #417DB1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_form h1 {
+    
+    text-align: center;
+    color:#417DB1;
+    margin-bottom: 10px;
+}
+
+.container_form label {
+    display: flex;
+    margin: 10px 0 5px;
+    color: #4D82B7;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3C79AA;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container_form input[type="submit"] {
+    background-color:#417DB1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container_form input[type="submit"]:hover {
+    background-color:#ffffff;
+    color:#417DB1;
+}
+
+.container_form a {
+    width: 100%;
+    font-size: 150%;
+    text-align: center;
+    color: #437CB1;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+.form span {
+    color: #3C79AA;
+}
+.try-again{
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+
+.try-again:after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    height: 1px;
+    top: 100%;
+    background: #ebebeb;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+.try-again:hover:after{
+    left: 40%;
+    right: 40%;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    font-weight: 600;
+    font-size: 14px;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0px;
+    box-shadow: 0 0 0 white, 0 0 0 white;
+}
+
+.button-text{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, #417DB1, #E0E9F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-circle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #417DB1, 0 0 20px #417DB1, 0 0 30px #417DB1;
+    transition: all 0.5s ease;
+}
+
+.button-circle2{
+    top: auto;
+    bottom: 0;
+}
+
+.button-circle3{
+    left: auto;
+    right: 0;
+    box-shadow: 0 0 10px #E0E9F4, 0 0 20px #E0E9F4, 0 0 30px #E0E9F4;
+}
+
+.button-circle4{
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 10px #E0E9F4, 0 0 20px #E0E9F4, 0 0 30px #E0E9F4;
+}
+
+.button:hover{
+    box-shadow: -15px 0 70px -15px #417DB1, 15px 0 70px -15px #E0E9F4;
+}
+
+.button:hover .button-circle1{
+    transform: translate(-15px, -15px) scale(0);
+}
+
+.button:hover .button-circle2{
+    transform: translate(-15px, 15px) scale(0);
+}
+
+.button:hover .button-circle3{
+    transform: translate(15px, -15px) scale(0);
+}
+
+.button:hover .button-circle4{
+    transform: translate(15px, 15px) scale(0);
+}
+
+.button:hover .button-circle{
+    box-shadow: none;
+}
+
+.popup{
+    opacity: 0;
+    visibility: hidden;
+    height: 200px;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.2s ease
+}
+
+.popup-inside{
+    color:#417DB1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 0 #417DB1;
+    transition:
+            box-shadow 0.5s ease 0.7s,
+            border-radius 0.35s ease 0.7s;
+}
+
+.backgrounds{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background{
+    --offset: 0;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #417DB1, #E0E9F4);
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+    border-radius: 50%;
+}
+
+.background2{
+    --offset: 10%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #417DB1, #E0E9F4);
+    transform: scale(0);
+    transition: all 0.5s ease 0.1s;
+}
+
+.background3{
+    --offset: 20%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right,#417DB1, #E0E9F4);
+    z-index: 2;
+    transition: all 0.5s ease 0.2s;
+}
+
+.background4{
+    --offset: 30%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #417DB1, #d4dde7);
+    z-index: 3;
+    transition: all 0.5s ease 0.3s;
+}
+
+.background5{
+    --offset: 40%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: linear-gradient(to right, #417DB1, #d4dde7);
+    z-index: 4;
+    transition: all 0.5s ease 0.4s;
+}
+
+.background6{
+  
+    --offset: 40%;
+    position: absolute;
+    left: var(--offset);
+    right: var(--offset);
+    bottom: var(--offset);
+    top: var(--offset);
+    background: white;
+    z-index: 5;
+    transition: all 0.8s ease 0.4s;
+}
+
+.content{
+    color:#417DB1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.35s ease 0.75s;
+    z-index: 10;
+}
+
+.content-wrapper{
+    color:#417DB1;
+    text-align: center;
+    
+}
+
+body.active .content{
+    color:#417DB1;
+    opacity: 1;
+    transform: none;
+}
+
+body.active .popup{
+    opacity: 1;
+    visibility: visible;
+}
+
+body.active .popup-inside{
+    border-radius: 60px;
+    box-shadow: -50px 0 200px -50px #417DB1, 50px 0 200px -50px #d4dde7;
+}
+
+body.active .background{
+    transform: scale(1);
+}
+
+body.active .background6{
+    transform: scale(8);
+}

@@ -7,6 +7,65 @@
   <title>Тригонометрия</title>
   <link rel="icon" href="ico.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/forma.css"><script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script>
+    $(function() {
+      $("div[id*='menu-']").hide();
+    })();
+
+    function toggle(objName) {
+      var obj = $(objName),
+              blocks = $("div[id*='menu-']");
+
+      if (obj.css("display") != "none") {
+        obj.animate({ height: 'hide' }, 500);
+      } else {
+        var visibleBlocks = $("div[id*='menu-']:visible");
+
+        if (visibleBlocks.length < 1) {
+          obj.animate({ height: 'show' }, 500);
+        } else {
+          $(visibleBlocks).animate({ height: 'hide' }, 500, function() {
+            obj.animate({ height: 'show' }, 500);
+          });
+        }
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "c4vXSUxnoPhmaVm03",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_zq4bpdm', 'template_8139gzh', this)
+                .then(() => {
+                  alert('Ваши результаты уже у преподавателя, после проверки результатов тестирования, оценка будет отправлена в ответном смс на вашу почту.');
+                }, (error) => {
+                  alert('Упс....Что-то пошло не так. Проверьте правильно ли введены Ваши данные.', error);
+                });
+      });
+    }
+  </script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+  </script>
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+      inlineMath: [['$','$'], ['<span>\</span>(','<span>\</span>)']]
+  }
+});
+</script>
 </head>
 <body>
 <div class="container">
@@ -23,7 +82,1513 @@
         </div>
       </nav>
     </header>
+    <main>
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-1');" class="btn btn-default">Тригонометричекие функции острого и произвольного углов</a>
+
+            <div id="menu-1">
+
+              <div class="form">
+                <br>
+                <br>
+                <span align="center" style="color:#2B4381">1.Вставьте пропущенное слово: </span>
+                <span align="center"style="color:#2B4381" >_________ острого угла определяется как отношение противолежащего катета к гипотенузе.</span></р>
+                <br>
+                <span  >
+              <input type="radio" name="11" id="to1" value="0">косинус <br>
+              <input type="radio" name="11" id="to2" value="1">синус <br>
+              <input type="radio" name="11" id="to3" value="0">тангенс <br>
+              <input type="radio" name="11" id="to4" value="0">котангенс <br>
+          </span>
+                <br>
+                <span align="center" style="color:#2B4381">2.Чему равен :  \(  sin60^{\circ }\)  </span>
+                <br>
+                <span  >
+              <input type="radio" name="12" id="to5" value="0">\(\frac{\sqrt{2}}{2}\)	 <br>
+              <input type="radio" name="12" id="to6" value="0">\(1\) <br>
+              <input type="radio" name="12" id="to7" value="1">\(\frac{\sqrt{3}}{2}\) <br>
+              <input type="radio" name="12" id="to8" value="0">\(\frac{1}{2}\)<br>
+            </span>
+                <br>
+                <span align="center" style="color:#2B4381" >3.По данным чертежа определите:\(  sinC\) </span>
+                <br>
+                <img  style="width:20%;" src="https://uploads-foxford-ru.ngcdn.ru/uploads/tinymce_file/file/63137/98cf920a212461a3.png" >
+                <br>
+                <span>
+              <br>
+              <input type="radio" name="13" id="to9" value="0">\(\frac{\sqrt{5}}{26}\)<br>
+              <input type="radio" name="13" id="to10" value="0">\(\frac{5\sqrt{26}}{26}\) <br>
+              <input type="radio" name="13" id="to11" value="0">\(\)<br>
+              <input type="radio" name="13" id="to12" value="1">\(5\)<br>
+         </span>
+                <br>
+                <span align="center" style="color:#2B4381">4.В треугольнике ABC угол С равен
+            \(  90^{\circ }\) ,AB = 5, AC =\(\sqrt{21}\)  . Найдите sinA</span>
+                <span>
+              <input type="radio" name="14" id="to13" value="1"> 0,4<br>
+              <input type="radio" name="14" id="to14" value="0"> 0,1<br>
+              <input type="radio" name="14" id="to15" value="0"> 0,5<br>
+              <input type="radio" name="14" id="to16" value="0"> 0,9<br>
+            </span>
+                <br>
+                <span align="center" style="color:#2B4381">5.В равнобедренном треугольнике ABC
+            боковые стороны АВ = ВС = 5, медиана BM=4. $$Найдите cos\angle BAC$$</span>
+                <br>
+                <span>
+              <input type="radio" name="15" id="to17" value="0"> нет верного ответа<br>
+              <input type="radio" name="15" id="to18" value="1"> 0,6 <br>
+              <input type="radio" name="15" id="to19" value="0"> 0,4<br>
+              <input type="radio" name="15" id="to20" value="0">0,5 <br>
+            </span>
+                <br>
+                <span align="left" style="color:#2B4381">6. В равнобедренном треугольнике АВС
+            медиана ВМ, проведѐнная к
+            основанию, равна 3, а \(tgA=\frac{3}{4}\).
+            Найдите боковую сторону треугольника АВС.
+             </span>
+                <br>
+                <span align="left" >
+                  <input type="radio" name="16" id="to21" value="1"> 5<br>
+                  <input type="radio" name="16" id="to22" value="0"> 3<br>
+                  <input type="radio" name="16" id="to23" value="0"> 4<br>
+                  <input type="radio" name="16" id="to24" value="0"> 6<br>
+                  <input type="radio" name="16" id="to25" value="0"> нет правильного ответа<br>
+              </span>
+                <br>
+                <span align="left" style="color:#2B4381">7.В треугольнике ABC известно, что
+            AB = ВС, AC = 10,\(tgA=\frac{\sqrt{11}}{5}\)
+            Найдите длину стороны AB.</span>
+                <br>
+                <span align="left" >
+              <input type="radio" name="17" id="to26" value="0">10<br>
+              <input type="radio" name="17" id="to27" value="0">8<br>
+              <input type="radio" name="17" id="to28" value="0">9<br>
+              <input type="radio" name="17" id="to29" value="1">6<br>
+              <input type="radio" name="17" id="to30" value="0">22<br>
+              <input type="radio" name="17" id="to31" value="0">5<br>
+              <input type="radio" name="17" id="to32" value="0">77<br>
+              <input type="radio" name="17" id="to33" value="0">нет правильного ответа<br>
+          </span>
+                <br>
+                <span align="left" style="color:#2B4381">8.Вычислить sinA, если cosA=\(\frac{3}{5}\) и \(0\lt A\lt \frac{\pi}{2}\)</span>
+                <br>
+                <span align="left">
+              <input type="radio" name="18" id="to34" value="0"> \(10\)<br>
+              <input type="radio" name="18" id="to35" value="0"> \(\frac{5}{9}\)<br>
+              <input type="radio" name="18" id="to36" value="1"> \(\frac{4}{5}\) <br>
+              <input type="radio" name="18" id="to37" value="0"> \(\frac{5}{4}\)<br>
+          </span>
+                <br>
+                <span align="left" style="color:#2B4381">9.tg90</h2>
+                  <br>
+          <span align="left" >
+              <input type="radio" name="19" id="to38" value="1"> не существует <br>
+              <input type="radio" name="19" id="to39" value="0"> 1<br>
+              <input type="radio" name="19" id="to40" value="0"> 0<br>
+              <input type="radio" name="19" id="to41" value="0"> 2<br>
+          </span>
+          <br>
+          <span align="left" style="color:#2B4381">10.Вычислить sin α, если ctg α =\(-\frac{12}{5} ,\frac{3\pi}{2}\lt \alpha\lt 2\pi\)</span>
+          <br>
+          <span align="left" >
+              <input type="radio" name="20" id="to42" value="0"> 0 <br>
+              <input type="radio" name="20" id="to43" value="0"> \(\frac{12}{13}\)<br>
+              <input type="radio" name="20" id="to44" value="1"> \(-\frac{5}{13}\)<br>
+              <input type="radio" name="20" id="to45" value="0"> \(-\frac{5}{12}\) <br>
+          </span>
+          <br>
+          <span align="left" style="color:#2B4381">11.Вычислить cos α, если ctg α =\(-\frac{12}{5} ,\frac{3\pi}{2}\lt \alpha\lt 2\pi\)</span>
+          <br>
+          <span align="left" >
+              <input type="radio" name="21" id="to46" value="1"> \(\frac{12}{13}\) <br>
+              <input type="radio" name="21" id="to47" value="0"> \(-\frac{5}{13}\)<br>
+              <input type="radio" name="21" id="to48" value="0"> \(-\frac{5}{12}\)<br>
+              <input type="radio" name="21" id="to49" value="0"> 0<br>
+          </span>
+          <br>
+          <span align="left" style="color:#2B4381">12. Вычислить tg α, если ctg α =\(-\frac{12}{5} ,\frac{3\pi}{2}\lt \alpha\lt 2\pi\)</span>
+          <br>
+          <span align="left" >
+              <input type="radio" name="22" id="to50" value="0"> \(-\frac{5}{13}\)<br>
+              <input type="radio" name="22" id="to51" value="1"> \(-\frac{5}{12}\)<br>
+          </span>
+          <br>
+          <span align="left" style="color:#2B4381" >13. Две стороны треугольника равны 2 и 3, а синус тупого угла, заключённого между этими
+            сторонами, равен 2√2/3. Найдите третью сторону треугольника</span>
+          <br>
+          <span>
+              <input type="radio" name="23" id="to52" value="0"> 17 <br>
+              <input type="radio" name="23" id="to53" value="0"> 6<br>
+              <input type="radio" name="23" id="to54" value="1"> \(\sqrt{17}\)<br>
+              <input type="radio" name="23" id="to55" value="0"> \(-\sqrt{17}\)<br>
+              <input type="radio" name="23" id="to56" value="0"> \(\sqrt{16}\)<br>
+              <input type="radio" name="23" id="to57" value="0"> \(\sqrt{3}\)<br>
+          </span>
+          <br>
+          <span align="left" style="color:#2B4381">14.Найдите все значения x, принадлежащие отрезку [0; π], для которых выполнено равенство
+            sin x + cos x = 1</span>
+          <br>
+          <span>
+              <input type="checkbox" name="24" id="to58" value="1"> 0 <br>
+              <input type="checkbox" name="24" id="to59" value="0"> -1<br>
+              <input type="checkbox" name="24" id="to60" value="1"> π/2<br>
+              <input type="checkbox" name="24" id="to61" value="0"> π<br>
+              <input type="checkbox" name="24" id="to62" value="0"> π/3<br>
+              <input type="checkbox" name="24" id="to63" value="0"> π/6<br>
+          </span>
+          <br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="wrapper">
+                <div class="button" onclick="document.body.classList.add('active')">
+                  <input type="button"  onclick="count2()" value="Подвести итоги" style="border: none;background-color:#d4dde7;color:#2B4381; width: 150px; height: 40px; font-size: 15px;">
+                  <div class="button-backgrounds">
+                    <div class="button-circle button-circle1"></div>
+                    <div class="button-circle button-circle2"></div>
+                    <div class="button-circle button-circle3"></div>
+                    <div class="button-circle button-circle4"></div>
+                  </div>
+
+                </div>
+                <div class="wrapper">
+                  <div class="popup">
+                    <div class="popup-inside">
+                      <div class="backgrounds">
+                        <div class="background"></div>
+                        <div class="background background2"></div>
+                        <div class="background background3"></div>
+                        <div class="background background4"></div>
+                        <div class="background background5"></div>
+                        <div class="background background6"></div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="content-wrapper">
+                        <input type="" id="balls2" readonly="readonly" style="border: none; font-size: 15px;width: 300px; height: 40px;   color:#417DB1;" >
+                        <p class="try-again" onclick="document.body.classList.remove('active')">закрыть</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-2');" class="btn btn-default">Измерение углов и свойства тригонометрических функций</a>
+
+            <div id="menu-2">
+
+              <div class="form">
+                <br>
+                <br>
+                <span align="center" style="color:#2B4381">1.Найти наименьшее из чисел: \(cos35^{\circ },cos\frac{\pi}{2},cos3,cos5\)</span>
+
+                <br>
+                <span  >
+                <input type="radio" name="11" id="to64" value="0">\(cos35^{\circ }\) <br>
+                <input type="radio" name="11" id="to65" value="0">\(cos\frac{\pi}{2}\)<br>
+                <input type="radio" name="11" id="to66" value="1">\(cos3\)<br>
+                <input type="radio" name="11" id="to67" value="0">\(cos5\)<br>
+            </span>
+                <br>
+                <span align="center" style="color:#2B4381">2.Пользуясь формулой перехода от градусной меры угла к радианной, найти радианную меру угла \(-162^{\circ }\)</span>
+                <br>
+                <span  >
+                <input type="radio" name="12" id="to68" value="0">\(-\frac{\pi}{9}\)	 <br>
+                <input type="radio" name="12" id="to69" value="0">\(-\frac{\pi}{10}\) <br>
+                <input type="radio" name="12" id="to70" value="1">\(-\frac{9\pi}{10}\) <br>
+                <input type="radio" name="12" id="to71" value="0">\(\frac{9\pi}{10}\)<br>
+              </span>
+                <br>
+                <span align="center" style="color:#2B4381" >3.Пользуясь формулой перехода от радианной меры угла к градусной, найти градусную меру угла, радианная мера которой равна\(  -\frac{7\pi}{12}\) </span>
+                <br>
+                <br>
+                <span>
+                <br>
+                <input type="radio" name="13" id="to72" value="0">\(105^{\circ }\)<br>
+                <input type="radio" name="13" id="to73" value="0">\(-95^{\circ }\) <br>
+                <input type="radio" name="13" id="to74" value="0">\(-205^{\circ }\)<br>
+                <input type="radio" name="13" id="to75" value="1">\(-105^{\circ }\)<br>
+           </span>
+                <br>
+                <span align="center" style="color:#2B4381">4.Найти в радианах дополнение угла \(\frac{11\pi}{13}\) до полного
+          </span>
+                <span>
+                <input type="radio" name="14" id="to76" value="1"> \(\frac{15\pi}{13}\)<br>
+                <input type="radio" name="14" id="to77" value="0"> \(\frac{5\pi}{13}\)<br>
+                <input type="radio" name="14" id="to78" value="0"> \(\frac{2\pi}{13}\)<br>
+                <input type="radio" name="14" id="to79" value="0"> \(\frac{30\pi}{13}\)<br>
+              </span>
+                <br>
+                <span align="center" style="color:#2B4381">5.Зубчатое колесо, имеющее 56 зубцов, повернулось на 14 зубцов против часовой стрелки. Выразить в радианах угол поворота колеса.</span>
+                <br>
+                <span>
+                <input type="radio" name="15" id="to80" value="0"> нет верного ответа<br>
+                <input type="radio" name="15" id="to81" value="1"> \(\frac{\pi}{2}\) <br>
+                <input type="radio" name="15" id="to82" value="0"> \(\frac{\pi}{3}\) <br>
+                <input type="radio" name="15" id="to83" value="0">\(\frac{3\pi}{2}\) <br>
+              </span>
+                <br>
+                <span align="left" style="color:#2B4381">6. Найти радианную меру дуги сектора, площадь которого равна 512 кв.см, а радиус ограничивающей его дуги равен 16 см.
+               </span>
+                <br>
+                <span align="left" >
+                    <input type="radio" name="16" id="to84" value="1"> 4<br>
+                    <input type="radio" name="16" id="to85" value="0"> 3<br>
+                    <input type="radio" name="16" id="to86" value="0"> 5<br>
+                    <input type="radio" name="16" id="to87" value="0"> 6<br>
+                    <input type="radio" name="16" id="to88" value="0"> нет правильного ответа<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">7. Окружность морского компаса делится на 32 равные части, называемые румбами. Выразить румб: в градусах и минутах </span>
+                <br>
+                <span align="left" >
+                <input type="radio" name="17" id="to89" value="0">\(15^{\circ }15^{'}\)<br>
+                <input type="radio" name="17" id="to90" value="0">\(-11^{\circ }15^{'}\)<br>
+                <input type="radio" name="17" id="to91" value="0">\(11^{\circ }17^{'}\)<br>
+                <input type="radio" name="17" id="to92" value="1">\(11^{\circ }15^{'}\)<br>
+                <input type="radio" name="17" id="to93" value="0">\(1^{\circ }15^{'}\)<br>
+                <input type="radio" name="17" id="to94" value="0">\(-1^{\circ }15^{'}\)<br>
+                <input type="radio" name="17" id="to95" value="0">\(11^{\circ }20^{'}\)<br>
+                <input type="radio" name="17" id="to96" value="0">нет правильного ответа<br>
+            </span>
+                <br>
+                <span align="left" style="color:#2B4381">8.Окружность морского компаса делится на 32 равные части, называемые румбами. Выразить румб: в радианах (с точностью до 0,001)</span>
+                <br>
+                <span align="left">
+                <input type="radio" name="18" id="to97" value="0"> \(0,199\)<br>
+                <input type="radio" name="18" id="to98" value="0"> \(0,186\)<br>
+                <input type="radio" name="18" id="to99" value="1"> \(0,196\) <br>
+                <input type="radio" name="18" id="to100" value="0"> \(0,296\)<br>
+            </span>
+                <br>
+                <span align="left" style="color:#2B4381">9.Какая из предложенных функций является четной?</h2>
+                  <br>
+            <span align="left" >
+                <input type="radio" name="19" id="to101" value="1"> cosx <br>
+                <input type="radio" name="19" id="to102" value="0"> sinx<br>
+                <input type="radio" name="19" id="to103" value="0"> tgx<br>
+                <input type="radio" name="19" id="to104" value="0"> ctgx<br>
+            </span>
+            <br>
+            <span align="left" style="color:#2B4381">10.Какая функция имеет период \(\pi\)</span>
+            <br>
+            <span align="left" >
+                <input type="radio" name="20" id="to105" value="0">sinx <br>
+                <input type="radio" name="20" id="to106" value="0"> cosx<br>
+                <input type="radio" name="20" id="to107" value="1"> tgx<br>
+                <input type="radio" name="20" id="to108" value="0"> -sinx <br>
+            </span>
+            <br>
+            <span align="left" style="color:#2B4381">11.Дан график функции y=sinx. На каком рисунке, отмеченный интервал, является периодом функции?</span>
+            <br>
+            <span align="left" >
+                <input type="radio" name="21" id="to109" value="1"><img style="width:20%;" src="https://8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/5e2cb1a6-b1d9-4f7b-9897-52f347238cb6/pareizais1w1014.png"><br>
+                <input type="radio" name="21" id="to110" value="0"> <img style="width:20%;" src="https://8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/12e7bef7-424e-40ae-8589-dd5beb41c6d7/nepsin2w1014.png"><br>
+                <input type="radio" name="21" id="to111" value="0"> <img style="width:20%;" src="https://8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/afb44282-e3c8-49c1-8b5c-d8fc1c234c42/nepsin3w1014.png"><br>
+                <input type="radio" name="21" id="to112" value="0"> <img style="width:20%;" src="https://8b08ab88-ee1b-4b04-9ae9-321e0da71ae2.selcdn.net/d6700ba8-6778-4dd2-ac85-73dbdd3c2ab9/nepsinw1014.png"><br>
+            </span>
+            <br>
+            <span align="left" style="color:#2B4381">12. Возможно ли, что область функции y=cos3x \(x\in (-\infty ;0)\cup (0;+\infty )\)</span>
+            <br>
+            <span align="left" >
+                <input type="radio" name="22" id="to113" value="0"> да<br>
+                <input type="radio" name="22" id="to114" value="1"> нет<br>
+            </span>
+            <br>
+            <span align="left" style="color:#2B4381" >13. Найди значение функции y=ctgx при значении аргумента \(x=\frac{\pi}{3}\)</span>
+            <br>
+            <span>
+                <input type="radio" name="23" id="to115" value="0"> \(\frac{\sqrt{6}}{3}\)<br>
+                <input type="radio" name="23" id="to116" value="0"> \(-\frac{\sqrt{3}}{3}\)<br>
+                <input type="radio" name="23" id="to117" value="1"> \(\frac{\sqrt{3}}{3}\)<br>
+                <input type="radio" name="23" id="to118" value="0"> \(\frac{\sqrt{1}}{3}\)<br>
+                <input type="radio" name="23" id="to119" value="0"> \(\frac{\sqrt{2}}{3}\)<br>
+                <input type="radio" name="23" id="to120" value="0"> \(-\frac{\sqrt{12}}{3}\)<br>
+            </span>
+            <br>
+            <span align="left" style="color:#2B4381">14.Период каких функций составляет \(2\pi\)</span>
+            <br>
+            <span>
+                <input type="checkbox" name="24" id="to121" value="1"> sinx<br>
+                <input type="checkbox" name="24" id="to122" value="0"> tgx<br>
+                <input type="checkbox" name="24" id="to123" value="1"> cosx<br>
+                <input type="checkbox" name="24" id="to124" value="0"> ctgx<br>
+                <input type="checkbox" name="24" id="to125" value="0"> -tgx<br>
+                <input type="checkbox" name="24" id="to126" value="0"> нет верного ответа<br>
+            </span>
+            <br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="wrapper">
+                <div class="button" onclick="document.body.classList.add('active')">
+                  <input type="button"  onclick="count3()" value="Подвести итоги" style="border: none;background-color:#d4dde7;color:#2B4381; width: 150px; height: 40px; font-size: 15px;">
+                  <div class="button-backgrounds">
+                    <div class="button-circle button-circle1"></div>
+                    <div class="button-circle button-circle2"></div>
+                    <div class="button-circle button-circle3"></div>
+                    <div class="button-circle button-circle4"></div>
+                  </div>
+
+                </div>
+                <div class="wrapper">
+                  <div class="popup">
+                    <div class="popup-inside">
+                      <div class="backgrounds">
+                        <div class="background"></div>
+                        <div class="background background2"></div>
+                        <div class="background background3"></div>
+                        <div class="background background4"></div>
+                        <div class="background background5"></div>
+                        <div class="background background6"></div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="content-wrapper">
+                        <input type="" id="balls3" readonly="readonly" style="border: none; font-size: 15px;width: 300px; height: 40px;   color:#417DB1;" >
+                        <p class="try-again" onclick="document.body.classList.remove('active')">закрыть</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-3');" class="btn btn-default">Формулы приведения и основые тригонометрические формулы</a>
+
+            <div id="menu-3">
+
+              <div class="form">
+                <br>
+                <br>
+                <span align="center" style="color:#2B4381">1.Вычислите  с  помощью  формул  приведения  синус угла \(240^{\circ }\)</span>
+                <br>
+                <span  >
+                    <input type="radio" name="11" id="to127" value="0">\(\frac{\sqrt{3}}{2}\)<br>
+                    <input type="radio" name="11" id="to128" value="1">\(-\frac{\sqrt{3}}{2}\)<br>
+                    <input type="radio" name="11" id="to129" value="0">\(\frac{\sqrt{2}}{2}\)<br>
+                    <input type="radio" name="11" id="to130" value="0">\(\frac{\sqrt{2}}{2}\)<br>
+                </span>
+                <br>
+                <span align="center" style="color:#2B4381">2.Вычислите  с  помощью  формул  приведения  косинус угла \(300^{\circ }\) </span>
+                <br>
+                <span  >
+                    <input type="radio" name="12" id="to131" value="0">\(-\frac{\sqrt{2}}{2}\)<br>
+                    <input type="radio" name="12" id="to132" value="0">\(\frac{\sqrt{2}}{2}\)<br>
+                    <input type="radio" name="12" id="to133" value="1">\(\frac{1}{2}\) <br>
+                    <input type="radio" name="12" id="to134" value="0">\(-\frac{1}{2}\) <br>
+                  </span>
+                <br>
+                <span align="center" style="color:#2B4381" >3.Вычислите  с  помощью  формул  приведения  тангенс угла \(225^{\circ }\) </span>
+                <br>
+                <br>
+                <span>
+                    <br>
+                    <input type="radio" name="13" id="to135" value="0">\(\frac{\sqrt{1}}{3}\)<br>
+                    <input type="radio" name="13" id="to136" value="0">\(\frac{\sqrt{3}}{3}\) <br>
+                    <input type="radio" name="13" id="to137" value="0">\(0\)<br>
+                    <input type="radio" name="13" id="to138" value="1">\(1\)<br>
+               </span>
+                <br>
+                <span align="center" style="color:#2B4381">4.Вычислите  с  помощью  формул  приведения  котенгенс угла \(150^{\circ }\)</span>
+                <br>
+                <span>
+                    <input type="radio" name="14" id="to139" value="1"> \(-\sqrt{3}\)<br>
+                    <input type="radio" name="14" id="to140" value="0"> \(\frac{\sqrt{1}}{3}\)<br>
+                    <input type="radio" name="14" id="to141" value="0"> \(\frac{\sqrt{3}}{3}\) <br>
+                    <input type="radio" name="14" id="to142" value="0"> \(\sqrt{3}\)<br>
+                  </span>
+                <br>
+                <span align="center" style="color:#2B4381">5.Найдите значение выражения \(37cos540^{\circ }\)</span>
+                <br>
+                <span>
+                    <input type="radio" name="15" id="to143" value="0"> нет верного ответа<br>
+                    <input type="radio" name="15" id="to144" value="1"> -37<br>
+                    <input type="radio" name="15" id="to145" value="0"> 0,4<br>
+                    <input type="radio" name="15" id="to146" value="0">37<br>
+                  </span>
+                <br>
+                <span align="left" style="color:#2B4381">6. Найдите значение выражения \(13\sqrt{3}tg(-930^{\circ })\)
+                   </span>
+                <br>
+                <span align="left" >
+                        <input type="radio" name="16" id="to147" value="1"> -24<br>
+                        <input type="radio" name="16" id="to148" value="0"> 24<br>
+                        <input type="radio" name="16" id="to149" value="0"> -20<br>
+                        <input type="radio" name="16" id="to150" value="0"> 20<br>
+                        <input type="radio" name="16" id="to151" value="0"> нет правильного ответа<br>
+                    </span>
+                <br>
+                <span align="left" style="color:#2B4381">7.Найдите значение выражения \(26\sqrt{2}sin135^{\circ }\)</span>
+                <br>
+                <span align="left" >
+                    <input type="radio" name="17" id="to152" value="0">27<br>
+                    <input type="radio" name="17" id="to153" value="0">-26<br>
+                    <input type="radio" name="17" id="to154" value="0">6<br>
+                    <input type="radio" name="17" id="to155" value="1">26<br>
+                    <input type="radio" name="17" id="to156" value="0">-27<br>
+                    <input type="radio" name="17" id="to157" value="0">5<br>
+                    <input type="radio" name="17" id="to158" value="0">77<br>
+                    <input type="radio" name="17" id="to159" value="0">нет правильного ответа<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">8.Найдите значение выражения \(-22tg14^{\circ }tg104^{\circ }\)</span>
+                <br>
+                <span align="left">
+                    <input type="radio" name="18" id="to160" value="0"> 27<br>
+                    <input type="radio" name="18" id="to161" value="0"> 26<br>
+                    <input type="radio" name="18" id="to162" value="1"> 22 <br>
+                    <input type="radio" name="18" id="to163" value="0"> -22<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">9.Найдите значение выражения \(8sin120^{\circ }cos660^{\circ }\)</span>
+                <br>
+                <span align="left" >
+                    <input type="radio" name="19" id="to164" value="1"> 6 <br>
+                    <input type="radio" name="19" id="to165" value="0"> 3<br>
+                    <input type="radio" name="19" id="to166" value="0"> 4<br>
+                    <input type="radio" name="19" id="to167" value="0"> 2<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">10.Упростите выражение: $$sin150^{\circ }+cos120^{\circ }+tg135^{\circ }+ctg225^{\circ }$$</span>
+                <br>
+                <span align="left" >
+                    <input type="radio" name="20" id="to168" value="0"> 1 <br>
+                    <input type="radio" name="20" id="to169" value="0"> \(\frac{12}{13}\)<br>
+                    <input type="radio" name="20" id="to170" value="1"> 0<br>
+                    <input type="radio" name="20" id="to171" value="0"> \(-\frac{5}{12}\) <br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">11.Упростите выражение: $$sin1470^{\circ }+cos600^{\circ }+tg945^{\circ }+ctg405^{\circ }$$</span>
+                <br>
+                <span align="left" >
+                    <input type="radio" name="21" id="to172" value="1"> 2 <br>
+                    <input type="radio" name="21" id="to173" value="0"> \(-\frac{5}{13}\)<br>
+                    <input type="radio" name="21" id="to174" value="0"> 1<br>
+                    <input type="radio" name="21" id="to175" value="0"> 0<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">12. Вычислить \(sin\frac{\pi}{8}cos\frac{\pi}{8}\)</span>
+                <br>
+                <span align="left" >
+                    <input type="radio" name="22" id="to176" value="0"> \(-\frac{\sqrt{2}}{4}\)<br>
+                    <input type="radio" name="22" id="to177" value="1"> \(\frac{\sqrt{2}}{4}\)<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381" >13. В равнобедренном треугольнике синус угла при основании равен 1/3. Найдите косинус угла
+                  при вершине этого треугольника.</span>
+                <br>
+                <span>
+                    <input type="radio" name="23" id="to178" value="0"> 17 <br>
+                    <input type="radio" name="23" id="to179" value="0"> 6<br>
+                    <input type="radio" name="23" id="to180" value="1"> \(-\frac{7}{9}\)<br>
+                    <input type="radio" name="23" id="to181" value="0"> \(\frac{8}{9}\)<br>
+                    <input type="radio" name="23" id="to182" value="0"> \(\frac{7}{9}\)<br>
+                    <input type="radio" name="23" id="to183" value="0"> \(-\frac{8}{9}\)<br>
+                </span>
+                <br>
+                <span align="left" style="color:#2B4381">14.Упростите сумму \(sin10^{\circ }+sin50^{\circ }\)</span>
+                <br>
+                <span>
+                    <input type="checkbox" name="24" id="to184" value="1"> \(cos\frac{\pi}{9}\)<br>
+                    <input type="checkbox" name="24" id="to185" value="0"> -1<br>
+                    <input type="checkbox" name="24" id="to186" value="1"> cos20<br>
+                    <input type="checkbox" name="24" id="to187" value="0"> cos30<br>
+                    <input type="checkbox" name="24" id="to188" value="0"> -cos20<br>
+                    <input type="checkbox" name="24" id="to189" value="0"> π/6<br>
+                </span>
+                <br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="wrapper">
+                <div class="button" onclick="document.body.classList.add('active')">
+                  <input type="button"  onclick="count4()" value="Подвести итоги" style="border: none;background-color:#d4dde7;color:#2B4381; width: 150px; height: 40px; font-size: 15px;">
+                  <div class="button-backgrounds">
+                    <div class="button-circle button-circle1"></div>
+                    <div class="button-circle button-circle2"></div>
+                    <div class="button-circle button-circle3"></div>
+                    <div class="button-circle button-circle4"></div>
+                  </div>
+
+                </div>
+                <div class="wrapper">
+                  <div class="popup">
+                    <div class="popup-inside">
+                      <div class="backgrounds">
+                        <div class="background"></div>
+                        <div class="background background2"></div>
+                        <div class="background background3"></div>
+                        <div class="background background4"></div>
+                        <div class="background background5"></div>
+                        <div class="background background6"></div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="content-wrapper">
+                        <input type="" id="balls4" readonly="readonly" style="border: none; font-size: 15px;width: 300px; height: 40px;   color:#417DB1;" >
+                        <p class="try-again" onclick="document.body.classList.remove('active')">закрыть</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-4');" class="btn btn-default">Обратные тригонометрические функции и уравнения</a>
+
+            <div id="menu-4">
+
+              <div class="form">
+                <br>
+                <br>
+                <span align="center" style="color:#2B4381">1.Сравнить числа: $$arcsin\frac{1}{\sqrt{3}} \square arcsin\frac{2}{\sqrt{10}}$$ </span>
+                <br>
+                <span  >
+                        <input type="radio" name="11" id="to190" value="0">\(arcsin\frac{1}{\sqrt{3}} \gt  arcsin\frac{2}{\sqrt{10}}\)<br>
+                        <input type="radio" name="11" id="to191" value="1">\(arcsin\frac{1}{\sqrt{3}} \lt   arcsin\frac{2}{\sqrt{10}}\)<br>
+                        <input type="radio" name="11" id="to192" value="0">\(arcsin\frac{1}{\sqrt{3}} =  arcsin\frac{2}{\sqrt{10}}\)<br>
+                        <input type="radio" name="11" id="to193" value="0">\(arcsin\frac{1}{\sqrt{3}} \equiv    arcsin\frac{2}{\sqrt{10}}\)<br>
+                    </span>
+                <br>
+                <span align="center" style="color:#2B4381">2.Вычислить \(arcsin\frac{1}{2}+arcsin\frac{\sqrt{3}}{2}\)
+                    </span>
+                <br>
+                <span  >
+                        <input type="radio" name="12" id="to194" value="0">30 <br>
+                        <input type="radio" name="12" id="to195" value="0">60<br>
+                        <input type="radio" name="12" id="to196" value="1">90<br>
+                        <input type="radio" name="12" id="to197" value="0">\(\frac{1}{2}\)<br>
+                      </span>
+                <br>
+                <span align="center" style="color:#2B4381" >3.Вычислить \(5arctg(-\sqrt{3})-3arccos(-\frac{\sqrt{2}}{2})\)</span>
+                <br>
+
+                <br>
+                <span>
+                        <br>
+                        <input type="radio" name="13" id="to198" value="0">\(\frac{\sqrt{5}}{26}\)<br>
+                        <input type="radio" name="13" id="to199" value="0">\(\frac{5\sqrt{26}}{26}\) <br>
+                        <input type="radio" name="13" id="to200" value="0">\(36\)<br>
+                        <input type="radio" name="13" id="to201" value="1">\(1095\)<br>
+                   </span>
+                <br>
+                <span align="center" style="color:#2B4381">4.Решить уравнение sinx=-1</span>
+                <span>
+                        <input type="radio" name="14" id="to202" value="1"> \(-\frac{\pi}{2}+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="14" id="to203" value="0"> \(-\frac{\pi}{2}+2\pi\kappa\)<br>
+                        <input type="radio" name="14" id="to204" value="0"> \(-\frac{\pi}{4}+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="14" id="to205" value="0"> \(-\frac{\pi}{3}+2\pi\kappa,\kappa\in Z\)<br>
+                      </span>
+                <br>
+                <span align="center" style="color:#2B4381">5.Решить уравнение cosx=1</span>
+                <br>
+                <span>
+                        <input type="radio" name="15" id="to206" value="0"> \(\pi+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="15" id="to207" value="1"> \(2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="15" id="to208" value="0">\(\pi+2\pi\kappa\)<br>
+                        <input type="radio" name="15" id="to209" value="0">\(4\pi\kappa,\kappa\in Z\)<br>
+                      </span>
+                <br>
+                <span align="left" style="color:#2B4381">6.Решить уравнение sin x + cos x = 1
+                       </span>
+                <br>
+                <span align="left" >
+                            <input type="radio" name="16" id="to210" value="1"> \(x_{1}=2\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{2}+2\pi\kappa,\kappa\in Z\)<br>
+                            <input type="radio" name="16" id="to211" value="0"> \(x_{1}=\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{2}+2\pi\kappa,\kappa\in Z\)<br>
+                            <input type="radio" name="16" id="to212" value="0"> \(x_{1}=2\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{5}+2\pi\kappa,\kappa\in Z\)<br>
+                            <input type="radio" name="16" id="to213" value="0"> \(x_{1}=2\pi\kappa,\kappa\in Z;x_{2}=\frac{3\pi}{2}+2\pi\kappa,\kappa\in Z\)<br>
+                            <input type="radio" name="16" id="to214" value="0"> нет правильного ответа<br>
+                        </span>
+                <br>
+                <span align="left" style="color:#2B4381">7.Решить уравнение \(cosx^{2}+sinxcosx=1\)</span>
+                <br>
+                <span align="left" >
+                        <input type="radio" name="17" id="to215" value="0">\(x_{1}=2+\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to216" value="0">\(x_{1}=4\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to217" value="0">\(x_{1}=\pi\kappa,\kappa\in Z;x_{2}=\frac{5\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to218" value="1">\(x_{1}=\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to219" value="0">\(x_{1}=\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{4}+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to220" value="0">\(x_{1}=\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{4}+4\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to221" value="0">\(x_{1}=2\pi\kappa,\kappa\in Z;x_{2}=\frac{\pi}{4}+4\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="17" id="to222" value="0">нет правильного ответа<br>
+                    </span>
+                <br>
+                <span align="left" style="color:#2B4381">8.Решить уравнение \(cos2x-cos8x+cos6x=1\)</span>
+                <br>
+                <span align="left">
+                        <input type="radio" name="18" id="to223" value="0"> \(x_{1}=\frac{\pi}{8}+\frac{\pi\kappa}{4},\kappa\in Z;x_{2}=\frac{\pi\kappa}{3},\kappa\in Z\)<br>
+                        <input type="radio" name="18" id="to224" value="0"> \(x_{1}=\frac{2\pi}{8}+\frac{\pi\kappa}{4},\kappa\in Z;x_{2}=\frac{\pi\kappa}{3},\kappa\in Z\)<br>
+                        <input type="radio" name="18" id="to225" value="1"> \(x_{1}=\frac{\pi}{8}+\frac{\pi\kappa}{4},\kappa\in Z;x_{2}=\frac{\pi\kappa}{3},\kappa\in Z,x_{3}=\pi\kappa,\kappa\in Z\) <br>
+                        <input type="radio" name="18" id="to226" value="0"> \(x_{1}=\frac{\pi}{8}+\frac{\pi\kappa}{4},\kappa\in Z;x_{2}=\frac{\pi\kappa}{3},\kappa\in Z,x_{3}=2\pi\kappa,\kappa\in Z\)<br>
+                    </span>
+                <br>
+                <span align="left" style="color:#2B4381">9.Решить уравнение \(3sin^{2}x+4sinxcosx+5cos^{2}x=2\)</h2>
+                  <br>
+                    <span align="left" >
+                        <input type="radio" name="19" id="to227" value="1"> \(x_{1}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z;x_{2}=arctg3+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="19" id="to228" value="0"> \(x_{1}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z;x_{2}=-arctg3+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="19" id="to229" value="0"> \(x_{1}=\frac{\pi}{4}+\pi\kappa,\kappa\in Z;x_{2}=-arctg3+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="19" id="to230" value="0"> \(x_{1}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z;x_{2}=-arctg2+\pi\kappa,\kappa\in Z\)<br>
+                    </span>
+                    <br>
+                    <span align="left" style="color:#2B4381">10.Решить уравнение \(3sinx-4cosx=3\)</span>
+                    <br>
+                    <span align="left" >
+                        <input type="radio" name="20" id="to231" value="0"> 0 <br>
+                        <input type="radio" name="20" id="to232" value="0"> \(x_{1}=2arctg7+2\pi\kappa,k\in Z;x_{2}=\frac{\pi}{2}+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="20" id="to233" value="1"> \(x_{1}=-2arctg7+2\pi\kappa,k\in Z;x_{2}=\frac{\pi}{2}+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="20" id="to234" value="0"> \(x_{1}=-2arctg7+2\pi\kappa,k\in Z;x_{2}=\frac{\pi}{4}-2\pi\kappa,\kappa\in Z\) <br>
+                    </span>
+                    <br>
+                    <span align="left" style="color:#2B4381">11.Решить уравнение \(tgx=0\)</span>
+                    <br>
+                    <span align="left" >
+                        <input type="radio" name="21" id="to235" value="1"> \(x=\pi\kappa,\kappa\in Z\) <br>
+                        <input type="radio" name="21" id="to236" value="0"> \(x=2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="21" id="to237" value="0"> \(x=4\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="21" id="to238" value="0"> \(x=\pi+\pi\kappa,\kappa\in Z\)<br>
+                    </span>
+                    <br>
+                    <span align="left" style="color:#2B4381">12. Решить уравнение \(-tgx-4ctgx=-\frac{4}{sinx}\)</span>
+                    <br>
+                    <span align="left" >
+                        <input type="radio" name="22" id="to239" value="0"> \(x=-\pm arccos(\frac{1}{3})+2\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="22" id="to240" value="1"> \(x=\pm arccos(\frac{1}{3})+2\pi\kappa,\kappa\in Z\)<br>
+                    </span>
+                    <br>
+                    <span align="left" style="color:#2B4381" >13. Решить уравнение \(tgx+3ctgx+4=0\)</span>
+                    <br>
+                    <span>
+                        <input type="radio" name="23" id="to241" value="0"> \(x_{1}=arctg3+\pi\kappa,\kappa\in Z;x_{2}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="23" id="to242" value="0"> \(x_{1}=-arctg2+\pi\kappa,\kappa\in Z;x_{2}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="23" id="to243" value="1"> \(x_{1}=-arctg3+\pi\kappa,\kappa\in Z;x_{2}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="radio" name="23" id="to244" value="0"> \(x_{1}=-arctg3+\pi\kappa,\kappa\in Z;x_{2}=-\frac{\pi}{2}+\pi\kappa,\kappa\in Z\)\)<br>
+                        <input type="radio" name="23" id="to245" value="0"> \(x_{1}=-arctg2+\pi\kappa,\kappa\in Z;x_{2}=-\frac{\pi}{7}+\pi\kappa,\kappa\in Z\)\)<br>
+                        <input type="radio" name="23" id="to246" value="0"> \(x_{1}=-arctg4+\pi\kappa,\kappa\in Z;x_{2}=-\frac{\pi}{4}+\pi\kappa,\kappa\in Z\)\)<br>
+                    </span>
+                    <br>
+                    <span align="left" style="color:#2B4381">14.Решить уравнение $$3sin2x+3cos2x=16sinxcos^{3}x-8sinxcosx$$</span>
+                    <br>
+                    <span>
+                        <input type="checkbox" name="24" id="to247" value="1"> \(x=-\frac{1}{2}arcsin\frac{1}{2\sqrt{2}}-\frac{\pi}{8}+\pi\kappa,\kappa\in Z\) <br>
+                        <input type="checkbox" name="24" id="to248" value="0">  \(x=arcsin\frac{1}{2\sqrt{2}}-\frac{\pi}{8}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="checkbox" name="24" id="to249" value="1"> \(x=\frac{3\pi}{8}+\frac{1}{2}arcsin\frac{1}{2\sqrt{2}}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="checkbox" name="24" id="to250" value="0">  \(x=\frac{1}{2}arcsin\frac{1}{2\sqrt{2}}-\frac{\pi}{8}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="checkbox" name="24" id="to251" value="0"> \(x=\frac{3\pi}{8}-\frac{1}{2}arcsin\frac{1}{2\sqrt{2}}+\pi\kappa,\kappa\in Z\)<br>
+                        <input type="checkbox" name="24" id="to252" value="0">\(x=-\frac{3\pi}{8}+\frac{1}{2}arcsin\frac{1}{2\sqrt{2}}+\pi\kappa,\kappa\in Z\)<br>
+                    </span>
+                    <br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="wrapper">
+                <div class="button" onclick="document.body.classList.add('active')">
+                  <input type="button"  onclick="count5()" value="Подвести итоги" style="border: none;background-color:#d4dde7;color:#2B4381; width: 150px; height: 40px; font-size: 15px;">
+                  <div class="button-backgrounds">
+                    <div class="button-circle button-circle1"></div>
+                    <div class="button-circle button-circle2"></div>
+                    <div class="button-circle button-circle3"></div>
+                    <div class="button-circle button-circle4"></div>
+                  </div>
+
+                </div>
+                <div class="wrapper">
+                  <div class="popup">
+                    <div class="popup-inside">
+                      <div class="backgrounds">
+                        <div class="background"></div>
+                        <div class="background background2"></div>
+                        <div class="background background3"></div>
+                        <div class="background background4"></div>
+                        <div class="background background5"></div>
+                        <div class="background background6"></div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="content-wrapper">
+                        <input type="" id="balls5" readonly="readonly" style="border: none; font-size: 15px;width: 300px; height: 40px;   color:#417DB1;" >
+                        <p class="try-again" onclick="document.body.classList.remove('active')">закрыть</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-5');" class="btn btn-default">Тригонометричекие неравенства</a>
+
+            <div id="menu-5">
+
+              <div class="form">
+                <br>
+                <br>
+                <span align="center" style="color:#2B4381">1.Решите неравенство \(sinx\gt \frac{1}{2}\) </span>
+
+                <br>
+                <span  >
+                            <input type="radio" name="11" id="to253" value="0">\(x\in (\frac{5\pi}{6}+2\pi\kappa;\frac{\pi}{6}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="11" id="to254" value="1">\(x\in (\frac{\pi}{6}+2\pi\kappa;\frac{5\pi}{6}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="11" id="to255" value="0">\(x\in (\frac{5\pi}{6}+2\pi\kappa;\frac{5\pi}{6}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="11" id="to256" value="0">\(x\in (\frac{\pi}{3}+2\pi\kappa;\frac{5\pi}{6}+2\pi\kappa),\kappa\in Z\)<br>
+                        </span>
+                <br>
+                <span align="center" style="color:#2B4381">2.Решите неравенство \(sinx\ge -\frac{\sqrt{2}}{2}\) </span>
+                <br>
+                <span  >
+                            <input type="radio" name="12" id="to257" value="0">\(x\in \left[ \frac{\pi}{4} +2\pi\kappa;-\frac{3\pi}{4}+2\pi\kappa\right],\kappa\in Z\)	 <br>
+                            <input type="radio" name="12" id="to258" value="0">\(x\in \left[ -\frac{\pi}{4} +\pi\kappa;-\frac{3\pi}{4}+2\pi\kappa\right],\kappa\in Z\) <br>
+                            <input type="radio" name="12" id="to259" value="1">\(x\in \left[ -\frac{\pi}{4} +2\pi\kappa;\frac{5\pi}{4}+2\pi\kappa\right],\kappa\in Z\) <br>
+                            <input type="radio" name="12" id="to260" value="0">\(x\in \left[ -\frac{\pi}{4} +2\pi\kappa;-\frac{3\pi}{2}+2\pi\kappa\right],\kappa\in Z\)<br>
+                          </span>
+                <br>
+                <span align="center" style="color:#2B4381" >3.Решите неравенство \(sinx\gt 0\) </span>
+                <br>
+
+                <br>
+                <span>
+                            <br>
+                            <input type="radio" name="13" id="to261" value="0">\(x\in (-2\pi\kappa;\pi+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="13" id="to262" value="0">\(x\in (\pi\kappa;\pi+2\pi\kappa),\kappa\in Z\) <br>
+                            <input type="radio" name="13" id="to263" value="0">\(x\in (2\pi\kappa;2\pi+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="13" id="to264" value="1">\(x\in (0+2\pi\kappa;\pi+2\pi\kappa),\kappa\in Z\)<br>
+                       </span>
+                <br>
+                <span align="center" style="color:#2B4381">4.Решите неравенство \(cosx\gt \frac{1}{2}\) </span>
+                <br>
+                <span>
+                            <input type="radio" name="14" id="to265" value="1"> \(x\in (-\frac{\pi}{3}+2\pi\kappa;\frac{\pi}{3}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="14" id="to266" value="0">\(x\in (\frac{\pi}{3}+2\pi\kappa;\frac{\pi}{3}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="14" id="to267" value="0"> \(x\in (-\frac{\pi}{3}+2\pi\kappa;-\frac{\pi}{3}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="14" id="to268" value="0">\(x\in (-\frac{\pi}{3}+2\pi\kappa;\frac{2\pi}{3}+2\pi\kappa),\kappa\in Z\)<br>
+                          </span>
+                <br>
+                <span align="center" style="color:#2B4381">5.Решите неравенство \(cosx\lt -\frac{\sqrt{3}}{2}\)</span>
+                <br>
+                <span>
+                            <input type="radio" name="15" id="to269" value="0"> нет верного ответа<br>
+                            <input type="radio" name="15" id="to270" value="1"> \(x\in (\frac{5\pi}{6}+2\pi\kappa;\frac{7\pi}{6}+2\pi\kappa),\kappa\in Z\) <br>
+                            <input type="radio" name="15" id="to271" value="0"> \(x\in (\frac{\pi}{6}+2\pi\kappa;\frac{7\pi}{6}+2\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="15" id="to272" value="0">\(x\in (\frac{\pi}{6}+2\pi\kappa;\frac{5\pi}{6}+2\pi\kappa),\kappa\in Z\)<br>
+                          </span>
+                <br>
+                <span align="left" style="color:#2B4381">6. Решите неравенство \(tgx\ge 1\)</span>
+                <br>
+                <span align="left" >
+                                <input type="radio" name="16" id="to273" value="1"> \(x\in \left[ \frac{\pi}{4} +\pi\kappa;\frac{\pi}{2}+\pi\kappa\right],\kappa\in Z\)<br>
+                                <input type="radio" name="16" id="to274" value="0"> \(x\in \left[ \frac{\pi}{2} +\pi\kappa;\frac{\pi}{2}+\pi\kappa\right],\kappa\in Z\)<br>
+                                <input type="radio" name="16" id="to275" value="0"> \(x\in \left[ \frac{\pi}{4} +\pi\kappa;\frac{\pi}{4}+\pi\kappa\right],\kappa\in Z\)<br>
+                                <input type="radio" name="16" id="to276" value="0"> \(x\in \left[- \frac{\pi}{4} +\pi\kappa;\frac{\pi}{2}+\pi\kappa\right],\kappa\in Z\)<br>
+                                <input type="radio" name="16" id="to277" value="0"> нет правильного ответа<br>
+                            </span>
+                <br>
+                <span align="left" style="color:#2B4381">7.Решите неравенство \(ctgx\le \sqrt{3}\)</span>
+                <br>
+                <span align="left" >
+                            <input type="radio" name="17" id="to278" value="0">\(x\in [\frac{5\pi}{6}+\pi\kappa;\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to279" value="0">\(x\in [\frac{\pi}{6}+\pi\kappa;5\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to280" value="0">\(x\in (\frac{\pi}{6}+\pi\kappa;\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to281" value="1">\(x\in [\frac{\pi}{6}+\pi\kappa;\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to282" value="0">\(x\in (\frac{5\pi}{6}+\pi\kappa;\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to283" value="0">\(x\in (\frac{\pi}{6}+\pi\kappa;5\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to284" value="0">\(x\in [\frac{\pi}{6}+\pi\kappa;5\pi+\pi\kappa),\kappa\in Z\)<br>
+                            <input type="radio" name="17" id="to285" value="0">нет правильного ответа<br>
+                        </span>
+                <br>
+                <span align="left" style="color:#2B4381">8.Решите неравенство \(cos4x\le \frac{1}{2}\)</span>
+                <br>
+                <span align="left">
+                            <input type="radio" name="18" id="to286" value="0"> \(x\in \left[ \frac{\pi}{12} +\frac{\pi\kappa}{2};\frac{5\pi}{12}+\frac{\pi\kappa}{2}\right),\kappa\in Z\)<br>
+                            <input type="radio" name="18" id="to287" value="0"> \(x\in \left[ \frac{\pi}{2} +\frac{\pi\kappa}{2};\frac{5\pi}{2}+\frac{\pi\kappa}{2}\right],\kappa\in Z\)<br>
+                            <input type="radio" name="18" id="to288" value="1"> \(x\in \left[ \frac{\pi}{12} +\frac{\pi\kappa}{2};\frac{5\pi}{12}+\frac{\pi\kappa}{2}\right],\kappa\in Z\) <br>
+                            <input type="radio" name="18" id="to289" value="0"> \(x\in \left[ \frac{\pi}{2} +\frac{\pi\kappa}{2};\frac{5\pi}{2}+\frac{\pi\kappa}{2}\right),\kappa\in Z\)<br>
+                        </span>
+                <br>
+                <span align="left" style="color:#2B4381">9.Решите неравенство \(cos4x\le \frac{1}{2}\)</h2>
+                  <br>
+                        <span align="left" >
+                            <input type="radio" name="19" id="to290" value="1"> \(x\in \left[-\frac{\pi}{6}+2\pi\kappa;\frac{\pi}{3}+2\pi\kappa\right]\cup \left[ \frac{2\pi}{3} +2\pi\kappa;\frac{7\pi}{6}+2\pi\kappa\right],\kappa\in Z\)<br>
+                            <input type="radio" name="19" id="to291" value="0"> \(x\in \left[-\frac{\pi}{6}+2\pi\kappa;\frac{\pi}{3}+2\pi\kappa\right]\cup \left[ \frac{\pi}{3} +2\pi\kappa;\frac{7\pi}{6}+\pi\kappa\right],\kappa\in Z\)<br>
+                            <input type="radio" name="19" id="to292" value="0"> \(x\in \left[-\frac{\pi}{6}+2\pi\kappa;\frac{\pi}{3}+2\pi\kappa\right]\cup \left[ \frac{2\pi}{3} +\pi\kappa;\frac{7\pi}{6}+2\pi\kappa\right],\kappa\in Z\)<br>
+                            <input type="radio" name="19" id="to293" value="0"> \(x\in \left[-\frac{\pi}{6}+2\pi\kappa;\frac{\pi}{3}+2\pi\kappa\right]\cup \left[ \frac{2\pi}{3} +2\pi\kappa;\frac{7\pi}{6}+\pi\kappa\right],\kappa\in Z\)<br>
+                        </span>
+                        <br>
+                        <span align="left" style="color:#2B4381">10. Найдите решение неравенства  \(\sqrt{cosx+\frac{1}{2}}\gt 2cosx\) на отрезке \(\left[ -2;\frac{16}{15} \right]\)</span>
+                        <br>
+                        <span align="left" >
+                            <input type="radio" name="20" id="to294" value="0"> нет решения <br>
+                            <input type="radio" name="20" id="to295" value="0"> \([-2;-\frac{\pi}{2})\cup (\frac{\pi}{2};\frac{16}{15}]\)<br>
+                            <input type="radio" name="20" id="to296" value="1"> \([-2;-\frac{\pi}{3})\cup (\frac{\pi}{3};\frac{16}{15}]\)<br>
+                            <input type="radio" name="20" id="to297" value="0"> \([-2;-\frac{\pi}{6})\cup (\frac{\pi}{6};\frac{16}{15}]\)<br>
+                        </span>
+                        <br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="wrapper">
+                <div class="button" onclick="document.body.classList.add('active')">
+                  <input type="button"  onclick="count6()" value="Подвести итоги" style="border: none;background-color:#d4dde7;color:#2B4381; width: 150px; height: 40px; font-size: 15px;">
+                  <div class="button-backgrounds">
+                    <div class="button-circle button-circle1"></div>
+                    <div class="button-circle button-circle2"></div>
+                    <div class="button-circle button-circle3"></div>
+                    <div class="button-circle button-circle4"></div>
+                  </div>
+
+                </div>
+                <div class="wrapper">
+                  <div class="popup">
+                    <div class="popup-inside">
+                      <div class="backgrounds">
+                        <div class="background"></div>
+                        <div class="background background2"></div>
+                        <div class="background background3"></div>
+                        <div class="background background4"></div>
+                        <div class="background background5"></div>
+                        <div class="background background6"></div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="content-wrapper">
+                        <input type="" id="balls6" readonly="readonly" style="border: none; font-size: 15px;width: 300px; height: 40px;   color:#417DB1;" >
+                        <p class="try-again" onclick="document.body.classList.remove('active')">закрыть</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-6');" class="btn btn-default">Итоговое тестирование по базовому уровню</a>
+
+            <div id="menu-6">
+
+              <div class="form">
+                <form id="contact-form">
+                  <!-- To simplify the tutorial, the value is static. -->
+                  <label>Введите ФИО и класс</label>
+                  <input type="text" name="to_name" required>
+                  <label>Email</label>
+                  <input type="email" name="reply_to" required>
+                  <label>В ответе пишем номер задания и ответ. В ином случае ответ будет не принят. </label>
+                  <label>Пройдите тестирование</label>
+                  <br>
+                  <br>
+                  <label style="color:#2B4381">1. Найдите cosa, если $$ sina=\frac{\sqrt{19}}{10},0^{\circ }\lt a\lt 90^{\circ }$$</label>
+                  <textarea name="message">1.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">2. Найдите sina, если $$ cosa=-\frac{\sqrt{15}}{4},90^{\circ }\lt a\lt 180^{\circ }$$</label>
+                  <textarea name="message">2.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">3. Найдите tga, если $$ sina=\frac{1}{\sqrt{17}},270^{\circ }\lt a\lt 360^{\circ }$$</label>
+                  <textarea name="message">3.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">4.Найдите значение выражения $$15sin450^{\circ }$$</label>
+                  <textarea name="message">4.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">5.Найдите значение выражения $$49\sqrt{2}cos405^{\circ }$$</label>
+                  <textarea name="message">5.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">6.Найдите значение выражения $$54\sqrt{2}sin225^{\circ }$$</label>
+                  <textarea name="message">6.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">7.Найдите значение выражения $$tg78^{\circ }ctg78^{\circ }$$</label>
+                  <textarea name="message">7.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">8.Найдите значение выражения $$\frac{50sin179^{\circ }cos179^{\circ }}{sin358^{\circ }}$$</label>
+                  <textarea name="message">8.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">9.Найдите значение выражения $$8sin\frac{5\pi}{12}cos\frac{\pi}{12}$$</label>
+                  <textarea name="message">9.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">10.Найдите значение выражения $$\sqrt{12}cos^{2}\frac{5\pi}{12}-\sqrt{3}$$</label>
+                  <textarea name="message">10.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">11.Найдите -47cos2a , если cosa=- 0,4 </label>
+                  <textarea name="message">11.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">12.Найдите значение выражения $$36\sqrt{3}tg\frac{\pi}{3}sin\frac{\pi}{6}$$</label>
+                  <textarea name="message">12.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">13.Найдите значение выражения $$2\sqrt{3}tg(-300^{\circ })$$</label>
+                  <textarea name="message">13.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">14.Найдите значение выражения $$24\sqrt{2}cos(-\frac{\pi}{3})sin(-\frac{\pi}{4})$$</label>
+                  <textarea name="message">14.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">15.Найдите значение выражения $$\frac{10sin6a}{3cos3a}$$</label>
+                  <textarea name="message">15.Ответ:</textarea>
+                  <br>
+                  <input type="submit" value="Send">
+                </form>
+              </div>
+
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="container_form">
+        <div class="column">
+
+          <div class="col-md-6">
+
+            <a href="#" onclick="toggle('#menu-7');" class="btn btn-default">Итоговое тестирование по профильному уровню</a>
+
+            <div id="menu-7">
+
+              <div class="form">
+                <form id="contact-form">
+                  <!-- To simplify the tutorial, the value is static. -->
+                  <label>Введите ФИО и класс</label>
+                  <input type="text" name="to_name" required>
+                  <label>Email</label>
+                  <input type="email" name="reply_to" required>
+                  <label>В ответе пишем номер задания и ответ. В ином случае ответ будет не принят. </label>
+                  <label>Пройдите тестирование</label>
+                  <br>
+                  <br>
+                  <label style="color:#2B4381">1. Найдите 7cosa, если $$ cosa=\frac{3\sqrt{5}}{7},a\in (1,5\pi;2\pi)$$</label>
+                  <textarea name="message">1.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">2. Найдите значение выражения $$\frac{3cos(\pi-\beta)+sin(\frac{\pi}{2}+\beta)}{cos(\beta+3\pi)}$$</label>
+                  <textarea name="message">2.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">3. Найдите значение выражения $$ 5tg(5\pi-\gamma)-tg(-\gamma),tg\gamma=7$$</label>
+                  <textarea name="message">3.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">4.Найдите значение выражения $$tg^{2}a, если :4sin^{2}a+9cos^{2}a=6$$</label>
+                  <textarea name="message">4.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">5.Найдите значение выражения $$tga, если: \frac{3sina-5cosa+2}{sina+3cosa+6}=\frac{1}{3}$$</label>
+                  <textarea name="message">5.</textarea>
+                  <br>
+                  <label style="color:#2B4381">6.На рисунке изображен график функции f(x)=acosx+b. Найдите a.</label>
+                  <img style="width:20%;" src="https://uchus.online/upload/files/tasks/7697/3ob-c3QtljS-3_BDmLZJldqPrOfwrXmU.jpg">
+                  <textarea name="message">6.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">7.На рисунке изображен график функции f(x)=atgx+b. Найдите a-b.</label>
+                  <img style="width:20%;" src="https://3.shkolkovo.online/api/latex-service/v1/GetSession/77105/AV_22_10_2.png">
+                  <textarea name="message">7.Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">8.а)решите уравнение$$\frac{cos2x+\sqrt{3}sinx-1}{tgx-\sqrt{3}}=0$$ </label>
+                  <label style="color:#2B4381">б)найдите корни принадлежащие промежутку: \(\left[ 2\pi;\frac{7\pi}{2} \right]\)</label>
+
+                  <textarea name="message">8.a)Ответ:              б)Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">9.а)решите уравнение$$\frac{2cosx-3}{2cosx-1}+\frac{1}{2cos^{2}x-cosx}=0$$</label>
+                  <label style="color:#2B4381">б)найдите корни принадлежащие промежутку: \(\left[ -4\pi;-\frac{5\pi}{2} \right]\)</label>
+                  <textarea name="message">9.a)Ответ:              б)Ответ:</textarea>
+                  <br>
+                  <label style="color:#2B4381">10.а)решите уравнение$$\frac{2cosx-3}{2cosx-1}+\frac{1}{2cos^{2}x-cosx}=0$$</label>
+                  <label style="color:#2B4381">б)найдите корни принадлежащие промежутку: \(\left[ \frac{7\pi}{2} ;5\pi\right]\)</label>
+                  <textarea name="message">10.a)Ответ:              б)Ответ:
+              </textarea>
+                  <br>
+                  <input type="submit" value="Send">
+                </form>
+              </div>
+
+            </div>
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </main>
   </div>
-</div>
+
 </body>
+<script >
+  var y=0;
+  var period2=10000;
+  const std_period2=10000;
+  function count2()
+  {
+
+    balls2.value=0;
+    if (to1.checked){balls2.value=Number(balls2.value)+Number(to1.value)};
+    if (to2.checked){balls2.value=Number(balls2.value)+Number(to2.value)};
+    if (to3.checked){balls2.value=Number(balls2.value)+Number(to3.value)};
+    if (to4.checked){balls2.value=Number(balls2.value)+Number(to4.value)};
+    if (to5.checked){balls2.value=Number(balls2.value)+Number(to5.value)};
+
+    if (to6.checked){balls2.value=Number(balls2.value)+Number(to6.value)};
+    if (to7.checked){balls2.value=Number(balls2.value)+Number(to7.value)};
+    if (to8.checked){balls2.value=Number(balls2.value)+Number(to8.value)};
+    if (to9.checked){balls2.value=Number(balls2.value)+Number(to9.value)};
+    if (to10.checked){balls2.value=Number(balls2.value)+Number(to10.value)};
+
+    if (to11.checked){balls2.value=Number(balls2.value)+Number(to11.value)};
+    if (to12.checked){balls2.value=Number(balls2.value)+Number(to12.value)};
+    if (to13.checked){balls2.value=Number(balls2.value)+Number(to13.value)};
+    if (to14.checked){balls2.value=Number(balls2.value)+Number(to14.value)};
+    if (to15.checked){balls2.value=Number(balls2.value)+Number(to15.value)};
+
+    if (to16.checked){balls2.value=Number(balls2.value)+Number(to16.value)};
+    if (to17.checked){balls2.value=Number(balls2.value)+Number(to17.value)};
+    if (to18.checked){balls2.value=Number(balls2.value)+Number(to18.value)};
+    if (to19.checked){balls2.value=Number(balls2.value)+Number(to19.value)};
+    if (to20.checked){balls2.value=Number(balls2.value)+Number(to20.value)};
+
+    if (to21.checked){balls2.value=Number(balls2.value)+Number(to21.value)};
+    if (to22.checked){balls2.value=Number(balls2.value)+Number(to22.value)};
+    if (to23.checked){balls2.value=Number(balls2.value)+Number(to23.value)};
+    if (to24.checked){balls2.value=Number(balls2.value)+Number(to24.value)};
+    if (to25.checked){balls2.value=Number(balls2.value)+Number(to25.value)};
+
+    if (to26.checked){balls2.value=Number(balls2.value)+Number(to26.value)};
+    if (to27.checked){balls2.value=Number(balls2.value)+Number(to27.value)};
+    if (to28.checked){balls2.value=Number(balls2.value)+Number(to28.value)};
+    if (to29.checked){balls2.value=Number(balls2.value)+Number(to29.value)};
+    if (to30.checked){balls2.value=Number(balls2.value)+Number(to30.value)};
+
+    if (to31.checked){balls2.value=Number(balls2.value)+Number(to31.value)};
+    if (to32.checked){balls2.value=Number(balls2.value)+Number(to32.value)};
+    if (to33.checked){balls2.value=Number(balls2.value)+Number(to33.value)};
+    if (to34.checked){balls2.value=Number(balls2.value)+Number(to34.value)};
+    if (to35.checked){balls2.value=Number(balls2.value)+Number(to35.value)};
+
+    if (to36.checked){balls2.value=Number(balls2.value)+Number(to36.value)};
+    if (to37.checked){balls2.value=Number(balls2.value)+Number(to37.value)};
+    if (to38.checked){balls2.value=Number(balls2.value)+Number(to38.value)};
+    if (to39.checked){balls2.value=Number(balls2.value)+Number(to39.value)};
+    if (to40.checked){balls2.value=Number(balls2.value)+Number(to40.value)};
+
+    if (to41.checked){balls2.value=Number(balls2.value)+Number(to41.value)};
+    if (to42.checked){balls2.value=Number(balls2.value)+Number(to42.value)};
+    if (to43.checked){balls2.value=Number(balls2.value)+Number(to43.value)};
+    if (to44.checked){balls2.value=Number(balls2.value)+Number(to44.value)};
+    if (to45.checked){balls2.value=Number(balls2.value)+Number(to45.value)};
+    if (to46.checked){balls2.value=Number(balls2.value)+Number(to46.value)};
+    if (to47.checked){balls2.value=Number(balls2.value)+Number(to47.value)};
+    if (to48.checked){balls2.value=Number(balls2.value)+Number(to48.value)};
+    if (to49.checked){balls2.value=Number(balls2.value)+Number(to49.value)};
+    if (to50.checked){balls2.value=Number(balls2.value)+Number(to50.value)};
+    if (to51.checked){balls2.value=Number(balls2.value)+Number(to51.value)};
+    if (to52.checked){balls2.value=Number(balls2.value)+Number(to52.value)};
+    if (to53.checked){balls2.value=Number(balls2.value)+Number(to53.value)};
+    if (to54.checked){balls2.value=Number(balls2.value)+Number(to54.value)};
+    if (to55.checked){balls2.value=Number(balls2.value)+Number(to55.value)};
+    if (to56.checked){balls2.value=Number(balls2.value)+Number(to56.value)};
+    if (to57.checked){balls2.value=Number(balls2.value)+Number(to57.value)};
+    if (to58.checked){balls2.value=Number(balls2.value)+Number(to58.value)};
+    if (to59.checked){balls2.value=Number(balls2.value)+Number(to59.value)};
+    if (to60.checked){balls2.value=Number(balls2.value)+Number(to60.value)};
+    if (to61.checked){balls2.value=Number(balls2.value)+Number(to61.value)};
+    if (to62.checked){balls2.value=Number(balls2.value)+Number(to62.value)};
+    if (to63.checked){balls2.value=Number(balls2.value)+Number(to63.value)};
+    balls2.value = "Тест1.Результат: "+balls2.value+" из 15 баллов"
+  }
+</script>
+<script >
+  var y=0;
+  var period3=10000;
+  const std_period3=10000;
+  function count3()
+  {
+
+    balls3.value=0;
+    if (to64.checked){balls3.value=Number(balls3.value)+Number(to64.value)};
+    if (to65.checked){balls3.value=Number(balls2.value)+Number(to65.value)};
+    if (to66.checked){balls3.value=Number(balls3.value)+Number(to66.value)};
+    if (to67.checked){balls3.value=Number(balls3.value)+Number(to67.value)};
+    if (to68.checked){balls3.value=Number(balls3.value)+Number(to68.value)};
+
+    if (to69.checked){balls3.value=Number(balls3.value)+Number(to69.value)};
+    if (to70.checked){balls3.value=Number(balls3.value)+Number(to70.value)};
+    if (to71.checked){balls3.value=Number(balls3.value)+Number(to71.value)};
+    if (to72.checked){balls3.value=Number(balls3.value)+Number(to72.value)};
+    if (to73.checked){balls3.value=Number(balls3.value)+Number(to73.value)};
+
+    if (to74.checked){balls3.value=Number(balls3.value)+Number(to74.value)};
+    if (to75.checked){balls3.value=Number(balls3.value)+Number(to75.value)};
+    if (to76.checked){balls3.value=Number(balls3.value)+Number(to76.value)};
+    if (to77.checked){balls3.value=Number(balls3.value)+Number(to77.value)};
+    if (to78.checked){balls3.value=Number(balls3.value)+Number(to78.value)};
+
+    if (to79.checked){balls3.value=Number(balls3.value)+Number(to79.value)};
+    if (to80.checked){balls3.value=Number(balls3.value)+Number(to80.value)};
+    if (to81.checked){balls3.value=Number(balls3.value)+Number(to81.value)};
+    if (to82.checked){balls3.value=Number(balls3.value)+Number(to82.value)};
+    if (to83.checked){balls3.value=Number(balls3.value)+Number(to83.value)};
+
+    if (to84.checked){balls3.value=Number(balls3.value)+Number(to84.value)};
+    if (to85.checked){balls3.value=Number(balls3.value)+Number(to85.value)};
+    if (to86.checked){balls3.value=Number(balls3.value)+Number(to86.value)};
+    if (to87.checked){balls3.value=Number(balls3.value)+Number(to87.value)};
+    if (to88.checked){balls3.value=Number(balls3.value)+Number(to88.value)};
+
+    if (to89.checked){balls3.value=Number(balls3.value)+Number(to89.value)};
+    if (to90.checked){balls3.value=Number(balls3.value)+Number(to90.value)};
+    if (to91.checked){balls3.value=Number(balls3.value)+Number(to91.value)};
+    if (to92.checked){balls3.value=Number(balls3.value)+Number(to92.value)};
+    if (to93.checked){balls3.value=Number(balls3.value)+Number(to93.value)};
+
+    if (to94.checked){balls3.value=Number(balls3.value)+Number(to94.value)};
+    if (to95.checked){balls3.value=Number(balls3.value)+Number(to95.value)};
+    if (to96.checked){balls3.value=Number(balls3.value)+Number(to96.value)};
+    if (to97.checked){balls3.value=Number(balls3.value)+Number(to97.value)};
+    if (to98.checked){balls3.value=Number(balls3.value)+Number(to98.value)};
+
+    if (to99.checked){balls3.value=Number(balls3.value)+Number(to99.value)};
+    if (to100.checked){balls3.value=Number(balls3.value)+Number(to100.value)};
+    if (to101.checked){balls3.value=Number(balls3.value)+Number(to101.value)};
+    if (to102.checked){balls3.value=Number(balls3.value)+Number(to102.value)};
+    if (to103.checked){balls3.value=Number(balls3.value)+Number(to103.value)};
+    if (to104.checked){balls3.value=Number(balls3.value)+Number(to104.value)};
+    if (to105.checked){balls3.value=Number(balls3.value)+Number(to105.value)};
+    if (to106.checked){balls3.value=Number(balls3.value)+Number(to106.value)};
+    if (to107.checked){balls3.value=Number(balls3.value)+Number(to107.value)};
+    if (to108.checked){balls3.value=Number(balls3.value)+Number(to108.value)};
+    if (to109.checked){balls3.value=Number(balls3.value)+Number(to109.value)};
+    if (to110.checked){balls3.value=Number(balls3.value)+Number(to110.value)};
+    if (to111.checked){balls3.value=Number(balls3.value)+Number(to111.value)};
+    if (to112.checked){balls3.value=Number(balls3.value)+Number(to112.value)};
+    if (to113.checked){balls3.value=Number(balls3.value)+Number(to113.value)};
+    if (to114.checked){balls3.value=Number(balls3.value)+Number(to114.value)};
+    if (to115.checked){balls3.value=Number(balls3.value)+Number(to115.value)};
+    if (to116.checked){balls3.value=Number(balls3.value)+Number(to116.value)};
+    if (to117.checked){balls3.value=Number(balls3.value)+Number(to117.value)};
+    if (to118.checked){balls3.value=Number(balls3.value)+Number(to118.value)};
+    if (to119.checked){balls3.value=Number(balls3.value)+Number(to119.value)};
+    if (to120.checked){balls3.value=Number(balls3.value)+Number(to120.value)};
+    if (to121.checked){balls3.value=Number(balls3.value)+Number(to121.value)};
+    if (to122.checked){balls3.value=Number(balls3.value)+Number(to122.value)};
+    if (to123.checked){balls3.value=Number(balls3.value)+Number(to123.value)};
+    if (to124.checked){balls3.value=Number(balls3.value)+Number(to124.value)};
+    if (to125.checked){balls3.value=Number(balls3.value)+Number(to125.value)};
+    if (to126.checked){balls3.value=Number(balls3.value)+Number(to126.value)};
+
+    balls3.value = "Тест2.Результат: "+balls3.value+" из 15 баллов"
+  }
+</script>
+<script >
+  var y=0;
+  var period4=10000;
+  const std_period4=10000;
+  function count4()
+  {
+
+    balls4.value=0;
+    if (to127.checked){balls3.value=Number(balls3.value)+Number(to127.value)};
+    if (to128.checked){balls4.value=Number(balls4.value)+Number(to128.value)};
+    if (to129.checked){balls4.value=Number(balls4.value)+Number(to129.value)};
+    if (to130.checked){balls4.value=Number(balls4.value)+Number(to130.value)};
+    if (to131.checked){balls4.value=Number(balls4.value)+Number(to131.value)};
+    if (to132.checked){balls4.value=Number(balls4.value)+Number(to132.value)};
+
+    if (to133.checked){balls4.value=Number(balls4.value)+Number(to133.value)};
+    if (to134.checked){balls4.value=Number(balls4.value)+Number(to134.value)};
+    if (to135.checked){balls4.value=Number(balls4.value)+Number(to135.value)};
+    if (to136.checked){balls4.value=Number(balls4.value)+Number(to136.value)};
+    if (to137.checked){balls4.value=Number(balls4.value)+Number(to137.value)};
+
+    if (to138.checked){balls4.value=Number(balls4.value)+Number(to138.value)};
+    if (to139.checked){balls4.value=Number(balls4.value)+Number(to139.value)};
+    if (to140.checked){balls4.value=Number(balls4.value)+Number(to140.value)};
+    if (to141.checked){balls4.value=Number(balls4.value)+Number(to141.value)};
+    if (to142.checked){balls4.value=Number(balls4.value)+Number(to142.value)};
+
+    if (to143.checked){balls4.value=Number(balls4.value)+Number(to143.value)};
+    if (to144.checked){balls4.value=Number(balls4.value)+Number(to144.value)};
+    if (to145.checked){balls4.value=Number(balls4.value)+Number(to145.value)};
+    if (to146.checked){balls4.value=Number(balls4.value)+Number(to146.value)};
+    if (to147.checked){balls4.value=Number(balls4.value)+Number(to147.value)};
+
+    if (to148.checked){balls4.value=Number(balls4.value)+Number(to148.value)};
+    if (to149.checked){balls4.value=Number(balls4.value)+Number(to149.value)};
+    if (to150.checked){balls4.value=Number(balls4.value)+Number(to150.value)};
+    if (to151.checked){balls4.value=Number(balls4.value)+Number(to151.value)};
+    if (to152.checked){balls4.value=Number(balls4.value)+Number(to152.value)};
+
+    if (to153.checked){balls4.value=Number(balls4.value)+Number(to153.value)};
+    if (to154.checked){balls4.value=Number(balls4.value)+Number(to154.value)};
+    if (to155.checked){balls4.value=Number(balls4.value)+Number(to155.value)};
+    if (to156.checked){balls4.value=Number(balls4.value)+Number(to156.value)};
+    if (to157.checked){balls4.value=Number(balls4.value)+Number(to157.value)};
+
+    if (to158.checked){balls4.value=Number(balls4.value)+Number(to158.value)};
+    if (to159.checked){balls4.value=Number(balls4.value)+Number(to159.value)};
+    if (to160.checked){balls4.value=Number(balls4.value)+Number(to160.value)};
+    if (to161.checked){balls4.value=Number(balls4.value)+Number(to161.value)};
+    if (to162.checked){balls4.value=Number(balls4.value)+Number(to162.value)};
+
+    if (to163.checked){balls4.value=Number(balls4.value)+Number(to163.value)};
+    if (to164.checked){balls4.value=Number(balls4.value)+Number(to164.value)};
+    if (to165.checked){balls4.value=Number(balls4.value)+Number(to165.value)};
+    if (to166.checked){balls4.value=Number(balls4.value)+Number(to166.value)};
+    if (to167.checked){balls4.value=Number(balls4.value)+Number(to167.value)};
+
+    if (to168.checked){balls4.value=Number(balls4.value)+Number(to168.value)};
+    if (to169.checked){balls4.value=Number(balls4.value)+Number(to169.value)};
+    if (to170.checked){balls4.value=Number(balls4.value)+Number(to170.value)};
+    if (to171.checked){balls4.value=Number(balls4.value)+Number(to171.value)};
+    if (to172.checked){balls4.value=Number(balls4.value)+Number(to172.value)};
+    if (to173.checked){balls4.value=Number(balls4.value)+Number(to173.value)};
+    if (to174.checked){balls4.value=Number(balls4.value)+Number(to174.value)};
+    if (to175.checked){balls4.value=Number(balls4.value)+Number(to175.value)};
+    if (to176.checked){balls4.value=Number(balls4.value)+Number(to176.value)};
+    if (to177.checked){balls4.value=Number(balls4.value)+Number(to177.value)};
+    if (to178.checked){balls4.value=Number(balls4.value)+Number(to178.value)};
+    if (to179.checked){balls4.value=Number(balls4.value)+Number(to179.value)};
+    if (to180.checked){balls4.value=Number(balls4.value)+Number(to180.value)};
+    if (to181.checked){balls4.value=Number(balls4.value)+Number(to181.value)};
+    if (to182.checked){balls4.value=Number(balls4.value)+Number(to182.value)};
+    if (to183.checked){balls4.value=Number(balls4.value)+Number(to183.value)};
+    if (to184.checked){balls4.value=Number(balls4.value)+Number(to184.value)};
+    if (to185.checked){balls4.value=Number(balls4.value)+Number(to185.value)};
+    if (to186.checked){balls4.value=Number(balls4.value)+Number(to186.value)};
+    if (to187.checked){balls4.value=Number(balls4.value)+Number(to187.value)};
+    if (to188.checked){balls4.value=Number(balls4.value)+Number(to188.value)};
+    if (to189.checked){balls4.value=Number(balls4.value)+Number(to189.value)};
+
+    balls4.value = "Тест3.Результат: "+balls4.value+" из 15 баллов"
+  }
+</script>
+<script >
+  var y=0;
+  var period5=10000;
+  const std_period5=10000;
+  function count5()
+  {
+
+    balls5.value=0;
+    if (to190.checked){balls4.value=Number(balls4.value)+Number(to190.value)};
+    if (to191.checked){balls5.value=Number(balls5.value)+Number(to191.value)};
+    if (to192.checked){balls5.value=Number(balls5.value)+Number(to192.value)};
+    if (to193.checked){balls5.value=Number(balls5.value)+Number(to193.value)};
+    if (to194.checked){balls5.value=Number(balls5.value)+Number(to194.value)};
+    if (to195.checked){balls5.value=Number(balls5.value)+Number(to195.value)};
+
+    if (to196.checked){balls5.value=Number(balls5.value)+Number(to196.value)};
+    if (to197.checked){balls5.value=Number(balls5.value)+Number(to197.value)};
+    if (to198.checked){balls5.value=Number(balls5.value)+Number(to198.value)};
+    if (to199.checked){balls5.value=Number(balls5.value)+Number(to199.value)};
+    if (to200.checked){balls5.value=Number(balls5.value)+Number(to200.value)};
+
+    if (to201.checked){balls5.value=Number(balls5.value)+Number(to201.value)};
+    if (to202.checked){balls5.value=Number(balls5.value)+Number(to202.value)};
+    if (to203.checked){balls5.value=Number(balls5.value)+Number(to203.value)};
+    if (to204.checked){balls5.value=Number(balls5.value)+Number(to204.value)};
+    if (to205.checked){balls5.value=Number(balls5.value)+Number(to205.value)};
+
+    if (to206.checked){balls5.value=Number(balls5.value)+Number(to206.value)};
+    if (to207.checked){balls5.value=Number(balls5.value)+Number(to207.value)};
+    if (to208.checked){balls5.value=Number(balls5.value)+Number(to208.value)};
+    if (to209.checked){balls5.value=Number(balls5.value)+Number(to209.value)};
+    if (to210.checked){balls5.value=Number(balls5.value)+Number(to210.value)};
+
+    if (to211.checked){balls5.value=Number(balls5.value)+Number(to211.value)};
+    if (to212.checked){balls5.value=Number(balls5.value)+Number(to212.value)};
+    if (to213.checked){balls5.value=Number(balls5.value)+Number(to213.value)};
+    if (to214.checked){balls5.value=Number(balls5.value)+Number(to214.value)};
+    if (to215.checked){balls5.value=Number(balls5.value)+Number(to215.value)};
+
+    if (to216.checked){balls5.value=Number(balls5.value)+Number(to216.value)};
+    if (to217.checked){balls5.value=Number(balls5.value)+Number(to217.value)};
+    if (to218.checked){balls5.value=Number(balls5.value)+Number(to218.value)};
+    if (to219.checked){balls5.value=Number(balls5.value)+Number(to219.value)};
+    if (to220.checked){balls5.value=Number(balls5.value)+Number(to220.value)};
+
+    if (to221.checked){balls5.value=Number(balls5.value)+Number(to221.value)};
+    if (to222.checked){balls5.value=Number(balls5.value)+Number(to222.value)};
+    if (to223.checked){balls5.value=Number(balls5.value)+Number(to223.value)};
+    if (to224.checked){balls5.value=Number(balls5.value)+Number(to224.value)};
+    if (to225.checked){balls5.value=Number(balls5.value)+Number(to225.value)};
+
+    if (to226.checked){balls5.value=Number(balls5.value)+Number(to226.value)};
+    if (to227.checked){balls5.value=Number(balls5.value)+Number(to227.value)};
+    if (to228.checked){balls5.value=Number(balls5.value)+Number(to228.value)};
+    if (to229.checked){balls5.value=Number(balls5.value)+Number(to229.value)};
+    if (to230.checked){balls5.value=Number(balls5.value)+Number(to230.value)};
+
+    if (to231.checked){balls5.value=Number(balls5.value)+Number(to231.value)};
+    if (to232.checked){balls5.value=Number(balls5.value)+Number(to232.value)};
+    if (to233.checked){balls5.value=Number(balls5.value)+Number(to233.value)};
+    if (to234.checked){balls5.value=Number(balls5.value)+Number(to234.value)};
+    if (to235.checked){balls5.value=Number(balls5.value)+Number(to235.value)};
+    if (to236.checked){balls5.value=Number(balls5.value)+Number(to236.value)};
+    if (to237.checked){balls5.value=Number(balls5.value)+Number(to237.value)};
+    if (to238.checked){balls5.value=Number(balls5.value)+Number(to238.value)};
+    if (to239.checked){balls5.value=Number(balls5.value)+Number(to239.value)};
+    if (to240.checked){balls5.value=Number(balls5.value)+Number(to240.value)};
+    if (to241.checked){balls5.value=Number(balls5.value)+Number(to241.value)};
+    if (to242.checked){balls5.value=Number(balls5.value)+Number(to242.value)};
+    if (to243.checked){balls5.value=Number(balls5.value)+Number(to243.value)};
+    if (to244.checked){balls5.value=Number(balls5.value)+Number(to244.value)};
+    if (to245.checked){balls5.value=Number(balls5.value)+Number(to245.value)};
+    if (to246.checked){balls5.value=Number(balls5.value)+Number(to246.value)};
+    if (to247.checked){balls5.value=Number(balls5.value)+Number(to247.value)};
+    if (to248.checked){balls5.value=Number(balls5.value)+Number(to248.value)};
+    if (to249.checked){balls5.value=Number(balls5.value)+Number(to249.value)};
+    if (to250.checked){balls5.value=Number(balls5.value)+Number(to250.value)};
+    if (to251.checked){balls5.value=Number(balls5.value)+Number(to251.value)};
+    if (to252.checked){balls5.value=Number(balls5.value)+Number(to252.value)};
+
+    balls5.value = "Тест4.Результат: "+balls5.value+" из 15 баллов"
+  }
+</script>
+<script >
+  var y=0;
+  var period6=10000;
+  const std_period6=10000;
+  function count6()
+  {
+
+    balls6.value=0;
+    if (to253.checked){balls5.value=Number(balls5.value)+Number(to253.value)};
+    if (to254.checked){balls6.value=Number(balls6.value)+Number(to254.value)};
+    if (to255.checked){balls6.value=Number(balls6.value)+Number(to255.value)};
+    if (to256.checked){balls6.value=Number(balls6.value)+Number(to256.value)};
+    if (to257.checked){balls6.value=Number(balls6.value)+Number(to257.value)};
+    if (to258.checked){balls6.value=Number(balls6.value)+Number(to258.value)};
+    if (to259.checked){balls6.value=Number(balls6.value)+Number(to259.value)};
+    if (to260.checked){balls6.value=Number(balls6.value)+Number(to260.value)};
+    if (to261.checked){balls6.value=Number(balls6.value)+Number(to261.value)};
+    if (to262.checked){balls6.value=Number(balls6.value)+Number(to262.value)};
+    if (to263.checked){balls6.value=Number(balls6.value)+Number(to263.value)};
+    if (to264.checked){balls6.value=Number(balls6.value)+Number(to264.value)};
+    if (to265.checked){balls6.value=Number(balls6.value)+Number(to265.value)};
+    if (to266.checked){balls6.value=Number(balls6.value)+Number(to266.value)};
+    if (to267.checked){balls6.value=Number(balls6.value)+Number(to267.value)};
+    if (to268.checked){balls6.value=Number(balls6.value)+Number(to268.value)};
+    if (to269.checked){balls6.value=Number(balls6.value)+Number(to269.value)};
+    if (to270.checked){balls6.value=Number(balls6.value)+Number(to270.value)};
+    if (to271.checked){balls6.value=Number(balls6.value)+Number(to271.value)};
+    if (to272.checked){balls6.value=Number(balls6.value)+Number(to272.value)};
+    if (to273.checked){balls6.value=Number(balls6.value)+Number(to273.value)};
+    if (to274.checked){balls6.value=Number(balls6.value)+Number(to274.value)};
+    if (to275.checked){balls6.value=Number(balls6.value)+Number(to275.value)};
+    if (to276.checked){balls6.value=Number(balls6.value)+Number(to276.value)};
+    if (to277.checked){balls6.value=Number(balls6.value)+Number(to277.value)};
+    if (to278.checked){balls6.value=Number(balls6.value)+Number(to278.value)};
+    if (to279.checked){balls6.value=Number(balls6.value)+Number(to279.value)};
+    if (to280.checked){balls6.value=Number(balls6.value)+Number(to280.value)};
+    if (to281.checked){balls6.value=Number(balls6.value)+Number(to281.value)};
+    if (to282.checked){balls6.value=Number(balls6.value)+Number(to282.value)};
+    if (to283.checked){balls6.value=Number(balls6.value)+Number(to283.value)};
+    if (to284.checked){balls6.value=Number(balls6.value)+Number(to284.value)};
+    if (to285.checked){balls6.value=Number(balls6.value)+Number(to285.value)};
+    if (to286.checked){balls6.value=Number(balls6.value)+Number(to286.value)};
+    if (to287.checked){balls6.value=Number(balls6.value)+Number(to287.value)};
+    if (to288.checked){balls6.value=Number(balls6.value)+Number(to288.value)};
+    if (to289.checked){balls6.value=Number(balls6.value)+Number(to289.value)};
+    if (to290.checked){balls6.value=Number(balls6.value)+Number(to290.value)};
+    if (to291.checked){balls6.value=Number(balls6.value)+Number(to291.value)};
+    if (to292.checked){balls6.value=Number(balls6.value)+Number(to292.value)};
+    if (to293.checked){balls6.value=Number(balls6.value)+Number(to293.value)};
+    if (to294.checked){balls6.value=Number(balls6.value)+Number(to294.value)};
+    if (to295.checked){balls6.value=Number(balls6.value)+Number(to295.value)};
+    if (to296.checked){balls6.value=Number(balls6.value)+Number(to296.value)};
+    if (to297.checked){balls6.value=Number(balls6.value)+Number(to297.value)};
+    balls6.value = "Тест5.Результат: "+balls6.value+" из 10 баллов"
+  }
+</script>
+<script src="https://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 </html>
